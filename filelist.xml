@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TODO
+balansera SSL, chaingun, autocannon, heavy railgun
+
+göra ammo lättare att skaffa (höja hur mycket mag man får när man craftar)
+✓Streamline:a ammo, gruppera upp dom (Smg AR, LMG)
+✓Reducea antal vapen
+Se över balansering
+
+
+comment from devs: Spawn an SMG round on use. Condition -5.0 -> 20 shots per magazine.
+-->
+
+
+<contentpackage name="hoxpox" path="Mods/hoxpox/filelist.xml" corepackage="false" gameversion="0.13.3.11">
+	<Item file="Mods/hoxpox/Turrets/Turrets.xml"/>
+	<Item file="Mods/hoxpox/Turrets/Loaders.xml"/>
+	<Item file="Mods/hoxpox/Turrets/Ammunition.xml"/>
+	<Afflictions file="Mods/hoxpox/Turrets/Afflictions.xml"/>
+	<Particles file="Mods/hoxpox/Turrets/ParticlePrefabs.xml"/>
+
+	<Item file="Mods/hoxpox/Weapons/Weapons.xml"/>
+	<Item file="Mods/hoxpox/Weapons/Cartriges.xml"/>
+	<Item file="Mods/hoxpox/Weapons/Mags.xml"/>
+
+	<Item file="Mods/hoxpox/remove_from_game.xml"/>
+</contentpackage>

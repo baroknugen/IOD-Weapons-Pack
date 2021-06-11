@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+
+
+
+
+
+<Override>
+<Item name="" identifier="smgmagazine" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,smgammo" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Sprite texture="weapons_new.png" depth="0.54" sourcerect="146,157,33,44" origin="0.5,0.5" />
+</Item>
+</Override>
+
+<Override>
+<Item name="" identifier="smg" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
+  <Sprite texture="weapons_new.png" sourcerect="0,121,144,80" depth="0.55" origin="0.5,0.5" />
+</Item>
+</Override>
+
+
+
+
+
+</Items>

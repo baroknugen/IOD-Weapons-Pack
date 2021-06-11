@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+
+
+
+<Override>
+<Item name="" identifier="shotgun" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="secarmcab" minamount="0" maxamount="2" spawnprobability="1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.33"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.33"/>
+	<Price baseprice="500" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="1" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
+	</Price>
+	<Deconstruct time="10">
+		<Item identifier="steel" />
+		<Item identifier="titaniumaluminiumalloy" />
+	</Deconstruct>
+	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,830,64,64" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="0,65,185,54" depth="0.55" origin="0.5,0.5" />
+	<Body width="180" height="45" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+	<RangedWeapon barrelpos="45,10" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Content/Items/Weapons/ShotgunShot1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+		<Sound file="Content/Items/Weapons/ShotgunShot2.ogg" type="OnUse" range="3000" />
+		<Sound file="Content/Items/Weapons/ShotgunShot3.ogg" type="OnUse" range="3000" />
+		<Sound file="Content/Items/Weapons/ShotgunShot4.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="150.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+		</StatusEffect>
+		<!-- Cocking sound, delayed by 1.0 seconds. -->
+		<StatusEffect type="OnUse" delay="1.0">
+			<Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random"	 />
+			<Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" />
+			<Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" />
+		</StatusEffect>
+		<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="60" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="6" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="shotgunammo" />
+	</ItemContainer>
+	<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+</Override>
+
+<Item name="Jovian Carbine" identifier="joviancarbine" description="This Compact Jerry-built Autoloading Rifle is made of parts belonging to multiple weapons. Its design is simple and can be effectivey used by anyone with a little bit of understanding with weapons. It's primarily used by Jovian Separatist Terrorists that're unable to acquire proper weapons. Chambered in 4.7x38mm. Can only feed from Box Magazines. Cannot use 'Special' ammo." category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+	<Price baseprice="420" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.30" minavailable="2" />
+		<Price locationtype="city" multiplier="1.00" minavailable="1" />
+		<Price locationtype="research" multiplier="0.50" sold="false" />
+		<Price locationtype="military" multiplier="1.00" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.10" minavailable="1" />
+	</Price>
+	<Deconstruct time="16">
+		<Item identifier="aluminium" />
+		<Item identifier="plastic" />
+		<Item identifier="steel" />
+	</Deconstruct>
+	<Sprite texture="weapons_new.png" sourcerect="236,852,243,67" depth="0.55" origin="0.49936455,0.42708096" />
+	<Body width="140" height="60" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="35,0" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" /> <!--holdangle="-40"-->
+	<RangedWeapon reload="0.228" barrelpos="27.5,6" spread="7.5" unskilledspread="28" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/47refit.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="100.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
+		</StatusEffect>
+		<!--"Use" contained magazine to spawn projectiles.-->
+		<StatusEffect type="OnUse" target="Contained">
+			<Use />
+		</StatusEffect>
+		<RequiredItems items="47mag,47magspec" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="35" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="47mag,47magspec" />
+	</ItemContainer>
+	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="MSW58 Mk.2 Mod 0" identifier="msw58" description="Modular Support Weapon 58; Mark Two, Version One. This Support Weapon is Chambered in 5.8x42mm. Can feed from both Longitudinal and Box Magazines. Cannot use 'Special' Ammo." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.001" />
+	<Price baseprice="970" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" sold="false" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="1.55" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="120">
+		<RequiredSkill identifier="weapons" level="70" />
+		<RequiredSkill identifier="mechanical" level="55" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="titaniumaluminiumalloy" />
+		<RequiredItem identifier="titanium" />
+		<RequiredItem identifier="carbon" />
+		<RequiredItem identifier="plastic" />
+	</Fabricate>
+	<Deconstruct time="30">
+		<Item identifier="plastic" />
+		<Item identifier="carbon" />
+		<Item identifier="titanium" />
+		<Item identifier="titaniumaluminiumalloy" />
+	</Deconstruct>
+	<InventoryIcon texture="Mods/hoxpox/Weapons/weaponicons.png" sourcerect="130,25,66,18" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="209,27,230,60" depth="0.55" origin="0.5,0.5" />
+	<Body width="140" height="60" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="42,0" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon reload="0.140" barrelpos="29,2" spread="10" unskilledspread="36" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/58.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="150.0" force="1.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="16.0" />
+		</StatusEffect>
+		<!--"Use" contained magazine to spawn projectiles.-->
+		<StatusEffect type="OnUse" target="Contained">
+			<Use />
+		</StatusEffect>
+		<RequiredItems items="58ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="58" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="58ammo" />
+	</ItemContainer>
+	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="SPMG Mk.3 Mod 2" identifier="spmgmk3custom2" description="Special Purpose Machine Gun; Mark Three, Version Two. This Advanced Machine Gun is Chambered in 8.6x48mm. The sheer size and power of this weapon makes it difficult to use without extensive experience with weapons. This SPMG Configuration is a continuation of Version 2. A luminescent gun sight makes it much easier to aim; Accuracy Increase. Can feed from both Drum and Standard Box Magazines. Cannont use Phaethon Housing Munitions." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Price baseprice="2150" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.1" sold="false" />
+		<Price locationtype="city" multiplier="1.35" sold="false" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="1.55" sold="false" />
+		<Price locationtype="mine" multiplier="1.0" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="60">
+		<RequiredSkill identifier="weapons" level="75" />
+		<RequiredSkill identifier="mechanical" level="64" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="phosphorus" />
+		<RequiredItem identifier="aluminium" />
+		<RequiredItem identifier="silicon" />
+	</Fabricate>
+	<Deconstruct time="30">
+		<Item identifier="steel" />
+		<Item identifier="aluminium" />
+	</Deconstruct>
+	<Sprite texture="weapons_new.png" sourcerect="1357,640,324,82" depth="0.55" origin="0.5006582,0.5326682" />
+	<Body width="140" height="60" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="42,0" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon reload="0.093" barrelpos="29.5,2" spread="2" unskilledspread="36" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/86spmgmk3.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/hoxpox/Weapons/spmgmk3raise.ogg" type="OnSecondaryUse" range="500" />
+		<StatusEffect type="OnUse">
+			<Explosion range="140.0" force="2.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="30.0" />
+		</StatusEffect>
+		<!--"Use" contained magazine to spawn projectiles.-->
+		<StatusEffect type="OnUse" target="Contained">
+			<Use />
+		</StatusEffect>
+		<RequiredItems items="86ammo,86ammospec" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="85" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="86ammo,86ammospec" />
+	</ItemContainer>
+	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="M419 Mk.4 Mod 1 (CQC)" identifier="m419mk4cqc" description="M419 Mark 4, Version 2; CQC Configuration. This Advanced Assault Rifle is chambered in 4.7x38mm. Only feeds from Box Magazines." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Price baseprice="1250" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.15" sold="false" />
+		<Price locationtype="city" multiplier="1.55" sold="false" />
+		<Price locationtype="research" multiplier="1.58" sold="false" />
+		<Price locationtype="military" multiplier="1.8" sold="false" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="30">
+		<RequiredSkill identifier="weapons" level="55" />
+		<RequiredSkill identifier="mechanical" level="42" />
+		<RequiredSkill identifier="electrical" level="25" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="carbon" />
+		<RequiredItem identifier="phosphorus" />
+		<RequiredItem identifier="silicon" />
+		<RequiredItem identifier="physicorium" />
+	</Fabricate>
+	<Deconstruct time="40">
+		<Item identifier="physicorium" />
+		<Item identifier="physicorium" />
+		<Item identifier="carbon" />
+		<Item identifier="phosphorus" />
+		<Item identifier="silicon" />
+	</Deconstruct>
+	<Sprite texture="weapons_new.png" sourcerect="429,157,167,62" depth="0.55" origin="0.5,0.5" />
+	<Body width="140" height="60" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="35,-5" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon reload="0.080" barrelpos="27,3" spread="4" unskilledspread="18" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Mods/hoxpox/Weapons/assaultsight2wlaser.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Mods/hoxpox/Weapons/assaultsight2wlaser.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/47s.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="100.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="4.0" />
+		</StatusEffect>
+		<!--"Use" contained magazine to spawn projectiles.-->
+		<StatusEffect type="OnUse" target="Contained">
+			<Use />
+		</StatusEffect>
+		<RequiredItems items="47mag,47magspec" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="60" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="47mag,47magspec" />
+	</ItemContainer>
+	<LightComponent LightColor="0.78,0.96,0.98,1.0" range="400" powerconsumption="0" IsOn="false" canbeselected="true" >
+		<LightTexture texture="Content/Lights/lightcone.png" origin="-0.03, 0.496" size="0.95,0.8" />
+	</LightComponent>
+	<CustomInterface canbeselected="true" drawhudwhenequipped="true">
+	<GuiFrame relativesize="0.09,0.06" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
+	<TickBox text="Gunlight">
+		<StatusEffect type="OnUse" target="This" IsOn="true" />
+		<StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+	</TickBox>
+	</CustomInterface>
+	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="MTR-H68 Mk.2 Mod 0" identifier="mtr68mk2" description="Modular Tactical Rifle-Heavy 68; Mark Two, Version One. This Advanced Assault Rifle is Chambered in 6.8x48mm. The complexity of this weapon makes it difficult to use without extensive experience with weapons." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Price baseprice="895" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1" sold="false" />
+		<Price locationtype="city" multiplier="1.75" sold="false" />
+		<Price locationtype="research" multiplier="1.5" sold="false" />
+		<Price locationtype="military" multiplier="1.85" sold="false" />
+		<Price locationtype="mine" multiplier="1" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="25">
+		<RequiredSkill identifier="weapons" level="72" />
+		<RequiredSkill identifier="mechanical" level="58" />
+		<RequiredSkill identifier="electrical" level="35" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="titaniumaluminiumalloy" />
+		<RequiredItem identifier="carbon" />
+	</Fabricate>
+	<Deconstruct time="15">
+		<Item identifier="steel" />
+		<Item identifier="titaniumaluminiumalloy" />
+		<Item identifier="carbon" />
+	</Deconstruct>
+	<Sprite texture="weapons_new.png" sourcerect="742,422,189,63" depth="0.55" origin="0.44556084,0.39830142" />
+	<Body width="140" height="60" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="40,0" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon reload="0.130" barrelpos="24.5,4" spread="4" unskilledspread="28" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/68mtrmk2.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="150.0" force="1.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
+		</StatusEffect>
+		<!--"Use" contained magazine to spawn projectiles.-->
+		<StatusEffect type="OnUse" target="Contained">
+			<Use />
+		</StatusEffect>
+		<RequiredItems items="68ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="68" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="68ammo" />
+	</ItemContainer>
+	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="MBR419 Mk.1 Mod 0" identifier="br419" description="Military Battle Rifle 419; Mark One, Version One. This Old Battle Rifle is Chambered in 6.8x48mm. Cannot use 'Special' Ammo." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" />
+		<Price baseprice="750" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.15" sold="false" />
+		<Price locationtype="city" multiplier="1.28" sold="false" />
+		<Price locationtype="research" multiplier="1.2" minavailable="1" />
+		<Price locationtype="military" multiplier="1.55" minavailable="1" />
+		<Price locationtype="mine" multiplier="1" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="90">
+		<RequiredSkill identifier="weapons" level="60" />
+		<RequiredSkill identifier="mechanical" level="45" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="titanium" />
+		<RequiredItem identifier="aluminium" />
+		<RequiredItem identifier="silicon" />
+	</Fabricate>
+	<Deconstruct time="28">
+		<Item identifier="titanium" />
+		<Item identifier="titaniumaluminiumalloy" />
+		<Item identifier="plastic" />
+	</Deconstruct>
+	<InventoryIcon texture="Mods/hoxpox/Weapons/weaponicons.png" sourcerect="63,88,67,19" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="17,226,206,53" depth="0.55" origin="0.5,0.5" />
+	<Body width="140" height="60" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="42,-5" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon reload="0.355" barrelpos="22,5" spread="4" unskilledspread="32" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/weapons/68.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="18.0" />
+		</StatusEffect>
+		<!--"Use" contained magazine to spawn projectiles.-->
+		<StatusEffect type="OnUse" target="Contained">
+			<Use />
+		</StatusEffect>
+		<RequiredItems items="68mag" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="60" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="68mag" />
+	</ItemContainer>
+	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="MAS6 Mk.1 Custom" identifier="mas6custom" description="This Heavily Modified MAS12 is designed to load and fire a whopping 23x75mm Cartridge. The sheer power of this weapon makes it difficult to use without extensive experience with weapons. Famous among Europan Riot Security Officers wanting to prove something, this 'MAS6' is used to knock down Heavily Armored targets from a safe distance." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<Price baseprice="884" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.3" sold="false" />
+		<Price locationtype="city" multiplier="1.85" sold="false" />
+		<Price locationtype="research" multiplier="1.15" sold="false" />
+		<Price locationtype="military" multiplier="1.55" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.05" sold="false" />
+	</Price>
+	<Deconstruct time="20">
+		<Item identifier="titanium" />
+		<Item identifier="titanium" />
+		<Item identifier="titaniumaluminiumalloy" />
+	</Deconstruct>
+	<Sprite texture="weapons_new.png" sourcerect="425,748,243,37" depth="0.55" origin="0.5,0.5" />
+	<Body width="180" height="45" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon barrelpos="45,10" spread="1" unskilledspread="20" combatPriority="80" reload="2" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/6g.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="225.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="144.0" />
+		</StatusEffect>
+		<StatusEffect type="OnUse" delay="1.2">
+			<Sound file="Mods/hoxpox/Weapons/bigshotgunload1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="Mods/hoxpox/weapons/bigshotgunload2.ogg" type="OnUse" range="3000" />
+		</StatusEffect>
+		<RequiredItems items="shotgunshell6g" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="75" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="4" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="shotgunshell6g" />
+	</ItemContainer>
+	<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="MAS12G Mk.1 Mod 0" identifier="mas12" description="Modular Assault Shotgun; Mark One, Version One. This Unique Military Shotgun can be converted to use either 12 Gauge or 10 Gauge Shotgun shells. Requires a Fabricator for Conversion." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
+		<Price baseprice="2000" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" sold="false" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="1.20" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<InventoryIcon texture="Mods/hoxpox/Weapons/weaponicons.png" sourcerect="312,87,57,11" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="214,301,218,39" depth="0.55" origin="0.5,0.5" />
+	<Body width="180" height="45" density="50" />
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon barrelpos="45,10" spread="1" unskilledspread="10" combatPriority="80" reload="1.5" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<Sound file="Mods/hoxpox/Weapons/10g.ogg" type="OnUse" range="3000" />
+		<StatusEffect type="OnUse">
+			<Explosion range="170.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="42.0" />
+		</StatusEffect>
+		<!-- Cocking sound, delayed by 1.0 seconds. -->
+		<StatusEffect type="OnUse" delay="1.0">
+			<Sound file="Mods/hoxpox/Weapons/shotgunload1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="Mods/hoxpox/Weapons/shotgunload2.ogg" type="OnUse" range="3000" />
+		</StatusEffect>
+		<RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="60" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="8" itempos="27,10" iteminterval="0,-4" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="shotgunammo" />
+	</ItemContainer>
+	<aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="RCSR7" identifier="rcsr7" description="Rapid Conversion Survival Revolver 7. This Unique Survival Revolver can be quickly and easily field converted to fire either .38s or Special 10mm Rounds." category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.23" />
+	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.03" />
+	<Price baseprice="260" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.35" minavailable="1" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="0.95" minavailable="2" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Deconstruct time="10">
+		<Item identifier="titanium" />
+		<Item identifier="plastic" />
+	</Deconstruct>
+	<InventoryIcon texture="Mods/hoxpox/Weapons/weaponicons.png" sourcerect="376,22,54,23" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="403,552,122,45" depth="0.55" origin="0.5,0.5" />
+	<Body width="72" height="40" density="50" />
+	<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-10,-7" msg="ItemMsgPickUpSelect" />
+	<RangedWeapon barrelpos="14,6" spread="0" unskilledspread="2" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
+		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+		<Sound file="Mods/hoxpox/Weapons/.45revolver.ogg" type="OnUse" range="3000" />
+		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
+		<StatusEffect type="OnUse">
+			<Explosion range="170.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="18.0" />
+		</StatusEffect>
+		<RequiredItems items="revolverround,10round" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredSkill identifier="weapons" level="40" />
+	</RangedWeapon>
+	<ItemContainer capacity="1" maxstacksize="7" hideitems="true" containedstateindicatorstyle="bullet">
+		<Containable items="revolverammo,10round" />
+	</ItemContainer>
+	<aitarget sightrange="2000" soundrange="5000" fadeouttime="5" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+
+
+
+
+</Items>

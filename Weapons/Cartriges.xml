@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Items>
+
+
+
+
+<Item name="4.7x38mm Cartridge" identifier="47round" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Body width="40" height="14" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="1.5" targetforce="2" itemdamage="20" severlimbsprobability="0.03">
+			<Affliction identifier="bleeding" strength="19" />
+			<Affliction identifier="gunshotwound" strength="16" />
+			<Affliction identifier="stun" strength="0.128" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="4.7x38mm Cartridge, Special" identifier="47roundspec" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Body width="40" height="14" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="1.2" targetforce="1.7" itemdamage="25" severlimbsprobability="0.5">
+			<Affliction identifier="bleeding" strength="15" />
+			<Affliction identifier="gunshotwound" strength="50" />
+			<Affliction identifier="lacerations" strength="30" />
+			<Affliction identifier="stun" strength="0.118" />
+			<Affliction identifier="radiationsickness" strength="50" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="10 Gauge Shotgun Shell (Buckshot)" identifier="shotgunshell10gbuckshot" description="A 10 Gauge Buckshot Shotgun Shell. Contains 18 Lead Pellets." category="Equipment" maxstacksize="5" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunshell10g" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="4" spawnprobability="0.03" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="6" spawnprobability="0.09" />
+	<Price baseprice="110" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" minavailable="3" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="1.0" minavailable="5" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Sprite texture="weapons_new.png" sourcerect="538,574,31,15" depth="0.55" origin="0.5,0.5" />
+	<Body width="23" height="10" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<!--When fired, spawns 18 projectiles simultaneously.-->
+	<Projectile characterusable="false" hitscan="true" hitscancount="18" removeonhit="true" spread="16">
+		<Attack structuredamage="0.5" targetforce="4" itemdamage="20" severlimbsprobability="0.3">
+			<Affliction identifier="bleeding" strength="6" />
+			<Affliction identifier="gunshotwound" strength="8" />
+			<Affliction identifier="stun" strength="0.2" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="10 Gauge Shotgun Shell (Slug)" identifier="shotgunshell10gslug" category="Equipment" maxstacksize="6" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunshell10g" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="6" spawnprobability="0.03" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="9" spawnprobability="0.09" />
+	<Price baseprice="100" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="0.9" minavailable="7" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Sprite texture="weapons_new.png" sourcerect="538,526,31,15" depth="0.55" origin="0.5,0.5" />
+	<Body width="23" height="10" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="5" targetforce="12" itemdamage="40" severlimbsprobability="0.5">
+			<Affliction identifier="bleeding" strength="25" />
+			<Affliction identifier="gunshotwound" strength="40" />
+			<Affliction identifier="internaldamage" strength="15" />
+			<Affliction identifier="stun" strength="0.35" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="23x75mm Cartridge (Shredder-16)" identifier="shotgunshell6gshredder" description="23x75mm Cartridge; Shredder-16 shredshot shotgun shell. Designed to quickly Kill or Knock out groups of soft targets at close range by causing Instantaneous Hemorrhagic Shock and Dismemberment." category="Equipment" maxstacksize="4" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunshell6g" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="4" spawnprobability="0.09" />
+	<Price baseprice="200" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="1.25" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.05" sold="false" />
+	</Price>
+	<Sprite texture="weapons_new.png" sourcerect="1647,88,51,20" depth="0.55" origin="0.5,0.5" />
+	<Body width="23" height="10" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" hitscancount="24" removeonhit="true" spread="18">
+		<Attack structuredamage="2" targetforce="7" itemdamage="25" severlimbsprobability="0.7">
+			<Affliction identifier="bleeding" strength="12" />
+			<Affliction identifier="lacerations" strength="3" />
+			<Affliction identifier="gunshotwound" strength="5" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="15" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="23x75mm Cartridge (Rifled SLKE)" identifier="shotgunshell6gslke" description="23x75mm Cartridge; Rifled-Super Lethal Kinetic Energy shotgun slug. Designed to quickly Kill or Knock down Heavily Armored Targets at close range by destroying Internal Organs and Fragmenting Bones." category="Equipment" maxstacksize="4" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,shotgunshell6g" Scale="0.5" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="4" spawnprobability="0.09" />
+	<Price baseprice="200" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.30" minavailable="2" />
+		<Price locationtype="research" multiplier="1.10" sold="false" />
+		<Price locationtype="military" multiplier="1.25" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.05" sold="false" />
+	</Price>
+	<Sprite texture="weapons_new.png" sourcerect="1647,47,51,20" depth="0.55" origin="0.5,0.5" />
+	<Body width="23" height="10" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<StatusEffect type="OnActive" target="This">
+			<ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="1" velocitymin="0" velocitymax="60" scalemin="0.3" scalemax="0.5" />
+		</StatusEffect>
+		<Attack structuredamage="10" targetforce="30" itemdamage="75" severlimbsprobability="1">
+			<Affliction identifier="bleeding" strength="28" />
+			<Affliction identifier="gunshotwound" strength="43" />
+			<Affliction identifier="blunttrauma" strength="20" />
+			<Affliction identifier="internaldamage" strength="25" />
+			<Affliction identifier="organdamage" strength="7" />
+			<Affliction identifier="stun" strength="0.6" />
+		</Attack>
+		 <StatusEffect type="OnBroken">
+			<Explosion range="50.0" force="14.0" camerashake="128.0" severlimbsprobability="0.8"/>
+		</StatusEffect>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="15" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="10x29mmR Cartridge " identifier="10round" category="Equipment" maxstacksize="7" interactthroughwalls="true" cargocontaineridentifier="metalcrate" Scale="0.5" tags="smallitem,10round" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="rcsr7" minamount="7" maxamount="7" spawnprobability="1" />
+	<PreferredContainer primary="secarmcab" minamount="0" maxamount="6" spawnprobability="0.25" />
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="5" spawnprobability="0.25" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="3" maxamount="7" spawnprobability="0.4" />
+	<PreferredContainer primary="wreckstoragecab" minamount="2" maxamount="6" spawnprobability="0.12" />
+	<Price baseprice="75" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" minavailable="4" />
+		<Price locationtype="city" multiplier="1.25" minavailable="8" />
+		<Price locationtype="research" multiplier="1.25" minavailable="3" />
+		<Price locationtype="military" multiplier="0.9" minavailable="21" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="8" />
+	</Price>
+	<InventoryIcon texture="Mods/hoxpox/Weapons/weaponicons.png" sourcerect="263,313,64,64" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="539,562,25,9" depth="0.55" origin="0.5,0.5" />
+	<Body width="29" height="10" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="6" targetforce="13" itemdamage="28" severlimbsprobability="0.4">
+			<Affliction identifier="bleeding" strength="40" />
+			<Affliction identifier="gunshotwound" strength="35" />
+			<Affliction identifier="stun" strength="0.45" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="5.8x42mm Cartridge" identifier="58round" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Body width="40" height="14" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="2.2" targetforce="5.5" itemdamage="23" severlimbsprobability="0.07">
+			<Affliction identifier="bleeding" strength="20" />
+			<Affliction identifier="gunshotwound" strength="20" />
+			<Affliction identifier="stun" strength="0.135" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.6" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="5.8x42mm Cartridge, Special" identifier="58roundspec" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Body width="40" height="14" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="0.4" targetforce="2.5" itemdamage="13" severlimbsprobability="0.01">
+			<Affliction identifier="bleeding" strength="12" />
+			<Affliction identifier="organdamage" strength="1" />
+			<Affliction identifier="burn" strength="4" />
+			<Affliction identifier="gunshotwound" strength="10" />
+			<Affliction identifier="stun" strength="0.165" />
+		</Attack>
+		<StatusEffect tags="poison" type="OnUse" target="Character" duration="3">
+			<Affliction identifier="nausea" amount="2" />
+		</StatusEffect>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.6" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="8.6x48mm Cartridge" identifier="86round" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Body width="40" height="14" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="7" targetforce="22" itemdamage="42" severlimbsprobability="0.5">
+			<Affliction identifier="bleeding" strength="23" />
+			<Affliction identifier="gunshotwound" strength="38" />
+			<Affliction identifier="stun" strength="0.295" />
+		</Attack>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.8" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Item name="8.6x48mm Cartridge, Special" identifier="86roundspec" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Body width="40" height="14" density="40" />
+	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+	<Projectile characterusable="false" hitscan="true" removeonhit="true">
+		<Attack structuredamage="8" targetforce="15" itemdamage="35" severlimbsprobability="0.25">
+			<Affliction identifier="bleeding" strength="6" />
+			<Affliction identifier="gunshotwound" strength="24" />
+			<Affliction identifier="stun" strength="0.35" />
+		</Attack>
+		<StatusEffect tags="poison" type="OnUse" target="Character" duration="3">
+			<Affliction identifier="radiationsickness" amount="2" />
+		</StatusEffect>
+		<StatusEffect type="OnImpact">
+			<Explosion range="28.0" structuredamage="10.0" itemdamage="75" stun="0.5" force="3.0" severlimbsprobability="0.95">
+				<Affliction identifier="burn" strength="19" />
+				<Affliction identifier="bleeding" strength="10" />
+				<Affliction identifier="internaldamage" strength="9" />
+				<Affliction identifier="radiationsickness" amount="20" />
+			</Explosion>
+		</StatusEffect>
+		<StatusEffect type="OnImpact" target="UseTarget">
+			<Conditional entitytype="eq Structure" />
+			<Conditional hastag="eq door" />
+			<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.8" scalemax="1" />
+		</StatusEffect>
+	</Projectile>
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+
+<Override>
+	<Item name="" identifier="smground" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
+		<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+		<Body width="40" height="14" density="40" />
+		<Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+		<Projectile characterusable="false" hitscan="true" removeonhit="true">
+			<Attack structuredamage="2.5" targetforce="5" itemdamage="20" severlimbsprobability="0.05">
+				<Affliction identifier="bleeding" strength="15" />
+				<Affliction identifier="gunshotwound" strength="15" />
+				<Affliction identifier="stun" strength="0.125" />
+			</Attack>
+			<StatusEffect type="OnImpact" target="UseTarget">
+				<Conditional entitytype="eq Structure"/>
+				<Conditional hastag="eq door"/>
+				<ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+			</StatusEffect>
+		</Projectile>
+		<Upgrade gameversion="0.10.0.0" scale="0.5" />
+	</Item>
+</Override>
+
+
+</Items>
