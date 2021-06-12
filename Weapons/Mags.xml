@@ -5,71 +5,9 @@
 
 
 
-<Item name="4.7x38mm Magazine" identifier="47mag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,47ammo" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
-	<Price baseprice="158" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" minavailable="2" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="0.9" minavailable="3" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
-	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="24">
-		<RequiredSkill identifier="weapons" level="35" />
-		<RequiredSkill identifier="mechanical" level="30" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="lead" />
-	</Fabricate>
-	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
-	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
-	<Body width="30" height="40" density="50" />
-	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="47round" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-		<Containable items="47round" />
-		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
-			<SpawnItem identifiers="47round" spawnposition="ThisInventory" />
-		</StatusEffect>
-	</ItemContainer>
-	<!--Magazines can be combined to raise condition.-->
-	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-</Item>
 
-<Item name="4.7x38mm Magazine special" identifier="47magspec" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,47ammo" impactsoundtag="impact_metal_light">
-	<Price baseprice="158" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" minavailable="2" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="0.9" minavailable="3" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
-	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="24">
-		<RequiredSkill identifier="weapons" level="35" />
-		<RequiredSkill identifier="mechanical" level="30" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="lead" />
-	</Fabricate>
-	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
-	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
-	<Body width="30" height="40" density="50" />
-	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="47roundspec" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-		<Containable items="47roundspec" />
-		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
-			<SpawnItem identifiers="47roundspec" spawnposition="ThisInventory" />
-		</StatusEffect>
-	</ItemContainer>
-	<!--Magazines can be combined to raise condition.-->
-	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
-	<Upgrade gameversion="0.10.0.0" scale="0.5" />
-</Item>
 
-<Item name="5.8x42mm Magazine" identifier="58mag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,58ammo" impactsoundtag="impact_metal_light">
+<Item name="AR Magazine" identifier="assrifmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="mp58" minamount="1" maxamount="1" spawnprobability="0.10" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.20" />
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.12" />
@@ -92,10 +30,10 @@
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1718,14,23,44" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
-	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="58round" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-		<Containable items="58round" />
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="assrifround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+		<Containable items="assrifround" />
 		<StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true">
-			<SpawnItem identifiers="58round" spawnposition="ThisInventory" />
+			<SpawnItem identifiers="assrifround" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
 	<!--Magazines can be combined to raise condition.-->
@@ -103,7 +41,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="5.8x42mm Magazine, Special" identifier="58magspec" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,58ammospec" impactsoundtag="impact_metal_light">
+<Item name="AR Magazine Special" identifier="assrifmagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.008" />
 	<Price baseprice="370" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
@@ -121,10 +59,10 @@
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1717,58,24,43" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
-	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="58roundspec" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-		<Containable items="58roundspec" />
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="assrifroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+		<Containable items="assrifroundspecial" />
 		<StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true">
-			<SpawnItem identifiers="58roundspec" spawnposition="ThisInventory" />
+			<SpawnItem identifiers="assrifroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
 	<!--Magazines can be combined to raise condition.-->
@@ -132,29 +70,32 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="8.6x48mm Drum Magazine" identifier="86magdrum" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,86ammo" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="spmg" minamount="1" maxamount="1" spawnprobability="1" />
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.001" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" />
-	<Price baseprice="380" soldeverywhere="false">
+<Item name="Sniper Magazine" identifier="snipermag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
+	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" sold="false" />
-		<Price locationtype="research" multiplier="1.25" minavailable="1" />
-		<Price locationtype="military" multiplier="1.08" minavailable="1" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Deconstruct time="32">
+	<Fabricate suitablefabricators="fabricator" requiredtime="24">
+		<RequiredSkill identifier="weapons" level="35" />
+		<RequiredSkill identifier="mechanical" level="30" />
+		<RequiredItem identifier="plastic" />
+		<RequiredItem identifier="lead" />
+	</Fabricate>
+	<Deconstruct time="15">
 		<Item identifier="plastic" copycondition="false" />
 		<Item identifier="lead" copycondition="true" />
-		<Item identifier="lead" copycondition="true" />
-		<Item identifier="titanium" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1713,174,38,44" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
-	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="86round" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-		<Containable items="86round" />
-		<StatusEffect type="OnUse" target="This" condition="-3.5" disabledeltatime="true">
-			<SpawnItem identifiers="86round" spawnposition="ThisInventory" />
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="sniperround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+		<Containable items="sniperround" />
+		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
+			<SpawnItem identifiers="sniperround" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
 	<!--Magazines can be combined to raise condition.-->
@@ -162,30 +103,30 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="8.6x48mm PHM Drum Magazine" identifier="86magdrumphm" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,86ammophm" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="spmg" minamount="1" maxamount="1" spawnprobability="1" />
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="1" spawnprobability="0.001" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.009" />
-	<Price baseprice="585" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.0" sold="false" />
-		<Price locationtype="city" multiplier="1.25" sold="false" />
-		<Price locationtype="research" multiplier="1.65" minavailable="1" />
-		<Price locationtype="military" multiplier="1.45" minavailable="1" />
+<Item name="Sniper Magazine special" identifier="snipermagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+	<Price baseprice="158" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Deconstruct time="42">
+	<Fabricate suitablefabricators="fabricator" requiredtime="24">
+		<RequiredSkill identifier="weapons" level="35" />
+		<RequiredSkill identifier="mechanical" level="30" />
+		<RequiredItem identifier="plastic" />
+		<RequiredItem identifier="lead" />
+	</Fabricate>
+	<Deconstruct time="15">
 		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="false" />
-		<Item identifier="titaniumaluminiumalloy" copycondition="true" />
-		<Item identifier="thorium" copycondition="true" />
-		<Item identifier="uranium" copycondition="true" />
+		<Item identifier="lead" copycondition="true" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1780,175,38,44" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
-	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="86roundspec" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-		<Containable items="86roundspec" />
-		<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
-			<SpawnItem identifiers="86roundspec" spawnposition="ThisInventory" />
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="sniperroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+		<Containable items="sniperroundspecial" />
+		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
+			<SpawnItem identifiers="sniperroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
 	<!--Magazines can be combined to raise condition.-->
@@ -193,7 +134,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name=".45ACP Magazine" identifier="45mag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,45ammo" impactsoundtag="impact_metal_light">
+<Item name="SMG magazine" identifier="smgmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
@@ -229,6 +170,40 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-
+<Item name="SMG magazine Special" identifier="smgmagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
+	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
+	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.04" />
+	<Price baseprice="110" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="0.9" minavailable="2" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="28">
+		<RequiredSkill identifier="weapons" level="30" />
+		<RequiredSkill identifier="mechanical" level="25" />
+		<RequiredItem identifier="plastic" />
+		<RequiredItem identifier="plastic" />
+		<RequiredItem identifier="lead" />
+	</Fabricate>
+	<Deconstruct time="15">
+		<Item identifier="plastic" copycondition="false" />
+		<Item identifier="lead" copycondition="true" />
+	</Deconstruct>
+	<Sprite texture="Mods/Saber Armaments/weapons/weapons_new.png" depth="0.54" sourcerect="1806,15,21,46" origin="0.5,0.5" />
+	<Body width="30" height="40" density="50" />
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smgroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+		<Containable items="smgroundspecial" />
+		<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+			<SpawnItem identifiers="smgroundspecial" spawnposition="ThisInventory" />
+		</StatusEffect>
+	</ItemContainer>
+	<!--Magazines can be combined to raise condition.-->
+	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
 
 </Items>

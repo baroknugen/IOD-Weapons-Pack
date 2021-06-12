@@ -63,6 +63,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
+<Override>
 <Item name="Shotgun Shell" identifier="shotgunshell" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -77,6 +78,7 @@
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
+</Override>
 
 <Item name="Shotgun Shell Special" identifier="shotgunshellspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
@@ -93,7 +95,8 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="Revolver Round" identifier="revolverround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Override>
+<Item name="Revolver Round" identifier="revolverround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -107,6 +110,7 @@
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
+</Override>
 
 <Item name="Revolver Round Special" identifier="revolverroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
@@ -123,6 +127,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
+<Override>
 <Item name="SMG Round" identifier="smground" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -137,6 +142,7 @@
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
+</Override>
 
 <Item name="SMG Round Special" identifier="smgroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
