@@ -2,7 +2,7 @@
 
 <Items>
 
-<Item name="AR Round" identifier="assrifround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Item name="AR Round" identifier="assrifround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="false" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -64,7 +64,18 @@
 </Item>
 
 <Override>
-<Item name="Shotgun Shell" identifier="shotgunshell" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Item name="Shotgun Shell" identifier="shotgunshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="8">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
+	</Fabricate>
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -80,7 +91,20 @@
 </Item>
 </Override>
 
-<Item name="Shotgun Shell Special" identifier="shotgunshellspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Item name="Shotgun Shell Special" identifier="shotgunshellspecial" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
+		<RequiredItem identifier="titaniumaluminiumalloy"/>
+	</Fabricate>
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
+	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -96,7 +120,18 @@
 </Item>
 
 <Override>
-<Item name="Revolver Round" identifier="revolverround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Item name="Revolver Round" identifier="revolverround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="8">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
+	</Fabricate>
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -112,7 +147,20 @@
 </Item>
 </Override>
 
-<Item name="Revolver Round Special" identifier="revolverroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Item name="Revolver Round Special" identifier="revolverroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="8">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
+		<RequiredItem identifier="titaniumaluminiumalloy"/>
+	</Fabricate>
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
+	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />

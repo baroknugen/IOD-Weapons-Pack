@@ -7,32 +7,23 @@
 
 
 
-<Item name="AR Magazine" identifier="assrifmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="mp58" minamount="1" maxamount="1" spawnprobability="0.10" />
-	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.20" />
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.12" />
-	<Price baseprice="174" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" minavailable="2" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="1.05" minavailable="3" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
-	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="24">
-		<RequiredSkill identifier="weapons" level="30" />
-		<RequiredSkill identifier="mechanical" level="25" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="lead" />
+<Item name="AR Magazine" identifier="assrifmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
-	<Deconstruct time="14">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1718,14,23,44" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="assrifround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="assrifround" />
-		<StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
 			<SpawnItem identifiers="assrifround" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -41,27 +32,21 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="AR Magazine Special" identifier="assrifmagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.008" />
-	<Price baseprice="370" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" sold="false" />
-		<Price locationtype="research" multiplier="1.05" minavailable="2" />
-		<Price locationtype="military" multiplier="1.25" minavailable="1" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
-	</Price>
-	<Deconstruct time="18">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
-		<Item identifier="raptorbane" copycondition="true" />
-		<Item identifier="raptorbane" copycondition="true" />
-		<Item identifier="sulphuricacid" copycondition="true" />
+<Item name="AR Magazine Special" identifier="assrifmagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem,armag" impactsoundtag="impact_metal_light" hideinmenus="true">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+		<RequiredSkill identifier="weapons" level="60" />
+		<RequiredItem identifier="iron"/>
+		<RequiredItem identifier="lead"/>
+	</Fabricate>
+	<Deconstruct time="24">
+		<RequiredItem identifier="iron"/>
+		<RequiredItem identifier="lead"/>
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1717,58,24,43" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="assrifroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="assrifroundspecial" />
-		<StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-0.33" disabledeltatime="true">
 			<SpawnItem identifiers="assrifroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -80,10 +65,9 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="24">
-		<RequiredSkill identifier="weapons" level="35" />
-		<RequiredSkill identifier="mechanical" level="30" />
-		<RequiredItem identifier="plastic" />
+	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+		<RequiredSkill identifier="weapons" level="40"/>
+		<RequiredItem identifier="iron" />
 		<RequiredItem identifier="lead" />
 	</Fabricate>
 	<Deconstruct time="15">
@@ -111,15 +95,16 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="24">
-		<RequiredSkill identifier="weapons" level="35" />
-		<RequiredSkill identifier="mechanical" level="30" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="lead" />
+	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
-	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
@@ -133,7 +118,40 @@
 	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
-
+<!--
+<Item name="Shotgun Magazine special" identifier="shotgunmagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+	<Price baseprice="158" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false" />
+		<Price locationtype="military" multiplier="0.9" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	</Price>
+	<Fabricate suitablefabricators="fabricator" requiredtime="24">
+		<RequiredSkill identifier="weapons" level="60" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="lead" />
+		<RequiredItem identifier="flashpowder" />
+		<RequiredItem identifier="titaniumaluminiumalloy" />
+	</Fabricate>
+	<Deconstruct time="24">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
+	</Deconstruct>
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
+	<Body width="30" height="40" density="50" />
+	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="shotgunshellspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
+		<Containable items="shotgunshellspecial" />
+		<StatusEffect type="OnUse" target="This" disabledeltatime="true">
+			<SpawnItem identifiers="shotgunshellspecial" spawnposition="ThisInventory" />
+		</StatusEffect>
+	</ItemContainer>
+	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
+	<Upgrade gameversion="0.10.0.0" scale="0.5" />
+</Item>
+-->
 <Item name="SMG magazine" identifier="smgmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
@@ -146,22 +164,22 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="2" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="28">
-		<RequiredSkill identifier="weapons" level="30" />
-		<RequiredSkill identifier="mechanical" level="25" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="lead" />
+	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
-	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 	</Deconstruct>
 	<Sprite texture="Mods/Saber Armaments/weapons/weapons_new.png" depth="0.54" sourcerect="1806,15,21,46" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smground" />
-		<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-2.2" disabledeltatime="true">
 			<SpawnItem identifiers="smground" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -197,7 +215,7 @@
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smgroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smgroundspecial" />
-		<StatusEffect type="OnUse" target="This" condition="-5" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
 			<SpawnItem identifiers="smgroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
