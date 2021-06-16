@@ -42,7 +42,7 @@
 		<Attack structuredamage="8" targetforce="10" itemdamage="40" severlimbsprobability="0.5">
 			<Affliction identifier="bleeding" strength="19" />
 			<Affliction identifier="gunshotwound" strength="30" />
-			<Affliction identifier="stun" strength="0.8" />
+			<Affliction identifier="stun" strength="1" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -54,10 +54,11 @@
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
-		<Attack structuredamage="16" targetforce="50" itemdamage="60" severlimbsprobability="1">
+		<Attack structuredamage="100" targetforce="50" itemdamage="60" severlimbsprobability="1">
 			<Affliction identifier="bleeding" strength="19" />
-			<Affliction identifier="gunshotwound" strength="45" />
-			<Affliction identifier="stun" strength="1.2" />
+			<Affliction identifier="gunshotwound" strength="100" />
+			<Affliction identifier="stun" strength="2" />
+			<Affliction identifier="radiationsickness" strength="50" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -65,14 +66,14 @@
 
 <Override>
 <Item name="Shotgun Shell" identifier="shotgunshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
-	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="8">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="24">
 		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="plastic"/>
 		<RequiredItem identifier="lead"/>
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="plastic"/>
 		<RequiredItem identifier="lead" mincondition="0.9"/>
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 	</Deconstruct>
@@ -91,19 +92,18 @@
 </Item>
 </Override>
 
-<Item name="Shotgun Shell Special" identifier="shotgunshellspecial" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
-	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+<Item name="Shotgun Shell Special" identifier="shotgunshellspecial" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5" hideinmenus="true">
+	<Fabricate suitablefabricators="fabricator" requiredtime="28" amount="8">
 		<RequiredSkill identifier="weapons" level="40" />
 		<RequiredItem identifier="steel"/>
 		<RequiredItem identifier="lead"/>
 		<RequiredItem identifier="flashpowder"/>
-		<RequiredItem identifier="titaniumaluminiumalloy"/>
 	</Fabricate>
 	<Deconstruct time="12">
 		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="plastic"/>
 		<RequiredItem identifier="lead" mincondition="0.9"/>
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
 	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -121,16 +121,13 @@
 
 <Override>
 <Item name="Revolver Round" identifier="revolverround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
-	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="8">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="32">
 		<RequiredSkill identifier="weapons" level="40" />
 		<RequiredItem identifier="steel"/>
 		<RequiredItem identifier="lead"/>
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
-	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+	<Deconstruct time="30">
 	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -138,9 +135,9 @@
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
 		<Attack structuredamage="5" targetforce="40" itemdamage="20" severlimbsprobability="0.1">
-			<Affliction identifier="bleeding" strength="40" />
+			<Affliction identifier="bleeding" strength="20" />
 			<Affliction identifier="gunshotwound" strength="30" />
-			<Affliction identifier="stun" strength="0.4" />
+			<Affliction identifier="stun" strength="0.3" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -148,7 +145,7 @@
 </Override>
 
 <Item name="Revolver Round Special" identifier="revolverroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
-	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="8">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="16">
 		<RequiredSkill identifier="weapons" level="40" />
 		<RequiredItem identifier="steel"/>
 		<RequiredItem identifier="lead"/>
@@ -166,10 +163,10 @@
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
-		<Attack structuredamage="10" targetforce="13" itemdamage="50" severlimbsprobability="0.4">
+		<Attack structuredamage="80" targetforce="80" itemdamage="50" severlimbsprobability="0.8">
 			<Affliction identifier="bleeding" strength="40" />
-			<Affliction identifier="gunshotwound" strength="35" />
-			<Affliction identifier="stun" strength="0.45" />
+			<Affliction identifier="gunshotwound" strength="90" />
+			<Affliction identifier="stun" strength="1.5" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -183,9 +180,8 @@
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" hitscancount="2" spread="1" removeonhit="true">
 		<Attack structuredamage="0.1" targetforce="1" itemdamage="5" severlimbsprobability="0">
-			<Affliction identifier="bleeding" strength="15" />
-			<Affliction identifier="gunshotwound" strength="15" />
-			<Affliction identifier="stun" strength="0.05" />
+			<Affliction identifier="bleeding" strength="5" />
+			<Affliction identifier="gunshotwound" strength="5" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -200,8 +196,7 @@
 	<Projectile characterusable="false" hitscan="true" hitscancount="2" spread="1" removeonhit="true">
 		<Attack structuredamage="0.1" targetforce="1" itemdamage="7" severlimbsprobability="0.1">
 			<Affliction identifier="bleeding" strength="20" />
-			<Affliction identifier="gunshotwound" strength="15" />
-			<Affliction identifier="stun" strength="0.05" />
+			<Affliction identifier="gunshotwound" strength="5" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />

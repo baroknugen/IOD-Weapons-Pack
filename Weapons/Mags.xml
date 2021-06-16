@@ -16,20 +16,22 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="12">
-		<RequiredSkill identifier="weapons" level="40"/>
-		<RequiredItem identifier="iron" />
-		<RequiredItem identifier="lead" />
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="4">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
+		<RequiredItem identifier="aluminium"/>
 	</Fabricate>
-	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
+	<Deconstruct time="12">
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="aluminium"/>
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="arround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="arround" />
-		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-3.3" disabledeltatime="true">
 			<SpawnItem identifiers="arround" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -46,22 +48,24 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="2">
 		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="steel"/>
 		<RequiredItem identifier="lead"/>
 		<RequiredItem identifier="flashpowder"/>
+		<RequiredItem identifier="magnesium"/>
+		<RequiredItem identifier="aluminium"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
 		<RequiredItem identifier="lead" mincondition="0.9"/>
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="aluminium"/>
+		<RequiredItem identifier="magnesium" mincondition="0.9"/>
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="arroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="arroundspecial" />
-		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
 			<SpawnItem identifiers="arroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -80,20 +84,22 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="4">
 		<RequiredSkill identifier="weapons" level="40"/>
-		<RequiredItem identifier="iron" />
-		<RequiredItem identifier="lead" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="flashpowder" />
+		<RequiredItem identifier="aluminium" />
 	</Fabricate>
 	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="aluminium" />
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="sniperround" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="sniperround" />
-		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
 			<SpawnItem identifiers="sniperround" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -110,22 +116,24 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="12">
-		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead"/>
-		<RequiredItem identifier="flashpowder"/>
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="2">
+		<RequiredSkill identifier="weapons" level="40"/>
+		<RequiredItem identifier="steel" />
+		<RequiredItem identifier="flashpowder" />
+		<RequiredItem identifier="lead" />
+		<RequiredItem identifier="uranium" />
 	</Fabricate>
-	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead" mincondition="0.9"/>
+	<Deconstruct time="15">
+		<RequiredItem identifier="steel" />
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="lead" />
+		<RequiredItem identifier="uranium" mincondition="0.9" />
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1844,15,36,54" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="sniperroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="sniperroundspecial" />
-		<StatusEffect type="OnUse" target="This" condition="-2.8" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-10" disabledeltatime="true">
 			<SpawnItem identifiers="sniperroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -179,22 +187,22 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="2" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="12">
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="4">
 		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="plastic"/>
 		<RequiredItem identifier="lead"/>
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="plastic"/>
 		<RequiredItem identifier="lead" mincondition="0.9"/>
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 	</Deconstruct>
-	<Sprite texture="Mods/Saber Armaments/weapons/weapons_new.png" depth="0.54" sourcerect="1806,15,21,46" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/Weapons_new.png" depth="0.54" sourcerect="1806,15,21,46" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smground" />
-		<StatusEffect type="OnUse" target="This" condition="-2.2" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
 			<SpawnItem identifiers="smground" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -215,18 +223,20 @@
 		<Price locationtype="military" multiplier="0.9" minavailable="2" />
 		<Price locationtype="mine" multiplier="1.25" sold="false" />
 	</Price>
-	<Fabricate suitablefabricators="fabricator" requiredtime="28">
-		<RequiredSkill identifier="weapons" level="30" />
-		<RequiredSkill identifier="mechanical" level="25" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="plastic" />
-		<RequiredItem identifier="lead" />
+	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="2">
+		<RequiredSkill identifier="weapons" level="40" />
+		<RequiredItem identifier="plastic"/>
+		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="flashpowder"/>
+		<RequiredItem identifier="titanium"/>
 	</Fabricate>
-	<Deconstruct time="15">
-		<Item identifier="plastic" copycondition="false" />
-		<Item identifier="lead" copycondition="true" />
+	<Deconstruct time="12">
+		<RequiredItem identifier="steel"/>
+		<RequiredItem identifier="lead" mincondition="0.9"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="titanium" mincondition="0.9"/>
 	</Deconstruct>
-	<Sprite texture="Mods/Saber Armaments/weapons/weapons_new.png" depth="0.54" sourcerect="1806,15,21,46" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/Weapons_new.png" depth="0.54" sourcerect="1806,15,21,46" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smgroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smgroundspecial" />
@@ -238,5 +248,9 @@
 	<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
+
+
+
+
 
 </Items>
