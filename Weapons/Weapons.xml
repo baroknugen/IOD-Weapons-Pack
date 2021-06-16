@@ -41,17 +41,17 @@
 		<StatusEffect type="OnUse" target="Contained">
 			<Use />
 		</StatusEffect>
-		<RequiredItems items="assrifmag" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredItems items="armag" type="Contained" msg="ItemMsgAmmoRequired" />
 		<RequiredSkill identifier="weapons" level="40" />
 	</RangedWeapon>
 	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
-		<Containable items="assrifmag" />
+		<Containable items="armag" />
 	</ItemContainer>
 	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="AR SCAR" identifier="scar" description="Special Purpose Machine Gun; Mark Three, Version Two. This Advanced Machine Gun is Chambered in 8.6x48mm. The sheer size and power of this weapon makes it difficult to use without extensive experience with weapons. This SPMG Configuration is a continuation of Version 2. A luminescent gun sight makes it much easier to aim; Accuracy Increase. Can feed from both Drum and Standard Box Magazines. Cannont use Phaethon Housing Munitions." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
+<Item name="AR SCAR" identifier="scar" description="Special Purpose Machine Gun; Mark Three, Version Two. This Advanced Machine Gun is Chambered in 8.6x48mm. The sheer size and power of this weapon makes it difficult to use without extensive experience with weapons. This SPMG Configuration is a continuation of Version 2. A luminescent gun sight makes it much easier to aim; Accuracy Increase. Can feed from both Drum and Standard Box Magazines. Cannont use Phaethon Housing Munitions." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="false">
 	<Price baseprice="1200" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.1" sold="false" />
 		<Price locationtype="city" multiplier="1.35" sold="false" />
@@ -86,17 +86,17 @@
 		<StatusEffect type="OnUse" target="Contained">
 			<Use />
 		</StatusEffect>
-		<RequiredItems items="assrifmag" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredItems items="armag" type="Contained" msg="ItemMsgAmmoRequired" />
 		<RequiredSkill identifier="weapons" level="85" />
 	</RangedWeapon>
 	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
-		<Containable items="assrifmag" />
+		<Containable items="armag" />
 	</ItemContainer>
 	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="AR 240b" identifier="240b" description="Modular Tactical Rifle-Heavy 68; Mark Two, Version One. This Advanced Assault Rifle is Chambered in 6.8x48mm. The complexity of this weapon makes it difficult to use without extensive experience with weapons." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true">
+<Item name="AR 240b" identifier="240b" description="Modular Tactical Rifle-Heavy 68; Mark Two, Version One. This Advanced Assault Rifle is Chambered in 6.8x48mm. The complexity of this weapon makes it difficult to use without extensive experience with weapons." category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="false">
 	<Price baseprice="2000" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1" sold="false" />
 		<Price locationtype="city" multiplier="1.75" sold="false" />
@@ -122,11 +122,11 @@
 		<StatusEffect type="OnUse" target="Contained">
 			<Use />
 		</StatusEffect>
-		<RequiredItems items="assrifmagspecial" type="Contained" msg="ItemMsgAmmoRequired" />
+		<RequiredItems items="armag, armagspecial" type="Contained" msg="ItemMsgAmmoRequired" />
 		<RequiredSkill identifier="weapons" level="60" />
 	</RangedWeapon>
 	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
-		<Containable items="assrifmagspecial" />
+		<Containable items="armag, armagspecial" />
 	</ItemContainer>
 	<aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />

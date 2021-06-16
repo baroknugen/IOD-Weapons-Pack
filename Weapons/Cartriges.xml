@@ -2,7 +2,7 @@
 
 <Items>
 
-<Item name="AR Round" identifier="assrifround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="false" scale="0.5">
+<Item name="AR Round" identifier="arround" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -17,7 +17,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="AR Round Special" identifier="assrifroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+<Item name="AR Round Special" identifier="arroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
