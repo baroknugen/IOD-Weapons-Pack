@@ -128,8 +128,7 @@
 	</Fabricate>
 	<Deconstruct time="30">
 	</Deconstruct>
-	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="1458,642,35,70" origin="0.5,0.5" />
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1458,642,35,70" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -157,7 +156,7 @@
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1511,625,36,85" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -188,7 +187,7 @@
 
 <Item name="SMG Round Special" identifier="smgroundspecial" category="Equipment" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
-	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_new.png" sourcerect="96,960,64,64" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" hitscancount="2" spread="1" removeonhit="true">

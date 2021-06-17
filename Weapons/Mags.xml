@@ -129,7 +129,7 @@
 		<RequiredItem identifier="lead" />
 		<RequiredItem identifier="uranium" mincondition="0.9" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1675,483,71,72" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_render04.png" depth="0.54" sourcerect="1675,483,71,72" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="sniperroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="sniperroundspecial" />
@@ -236,7 +236,7 @@
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 		<RequiredItem identifier="titanium" mincondition="0.9"/>
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/Weapons_new.png" depth="0.54" sourcerect="1517,470,53,105" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_render04.png" depth="0.54" sourcerect="1517,470,53,105" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smgroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smgroundspecial" />
