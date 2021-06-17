@@ -77,7 +77,7 @@
 		<RequiredItem identifier="lead" mincondition="0.9"/>
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 	</Deconstruct>
-	<Sprite texture="weapons_new.png" sourcerect="1355,641,52,78" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1355,641,52,78" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" hitscancount="8" removeonhit="true" spread="15">
@@ -129,7 +129,7 @@
 	<Deconstruct time="30">
 	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="1458,642,35,70" origin="0.5,0.5" />
-	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -157,8 +157,7 @@
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
 	</Deconstruct>
-	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="1511,625,36,85" origin="0.5,0.5" />
-	<Sprite texture="weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">

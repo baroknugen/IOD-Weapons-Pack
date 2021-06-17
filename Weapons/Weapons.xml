@@ -25,7 +25,7 @@
 		<RequiredItem identifier="plastic" />
 		<RequiredItem identifier="steel" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="17,32,454,126" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="17,32,454,126" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="32,-5" aimpos="42,0" handle1="-50,-10" handle2="600,7" holdangle="-50" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon reload="0.17" barrelpos="29,2" spread="9" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -69,7 +69,7 @@
 		<RequiredItem identifier="titaniumaluminiumalloy" />
 		<RequiredItem identifier="titaniumaluminiumalloy" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="24,160,426,230" depth="0.55" origin="0.5006582,0.5326682" />
+	<Sprite texture="weapons_Render04.png" sourcerect="24,160,426,230" depth="0.55" origin="0.5006582,0.5326682" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="35,0" handle1="-48,-38" handle2="140,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon reload="0.13" barrelpos="29.5,2" spread="5" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -106,7 +106,7 @@
 	<Deconstruct time="2">
 		<Item identifier="240b" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="23,410,524,174" depth="0.55" origin="0.44556084,0.39830142" />
+	<Sprite texture="weapons_Render04.png" sourcerect="23,410,524,174" depth="0.55" origin="0.44556084,0.39830142" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="25,10" handle1="-50,-55" handle2="160,-50" holdangle="-40" msg="ItemMsgPickUpSelect">
 		<StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.0" setvalue="true" />
@@ -155,7 +155,7 @@
 		<RequiredItem identifier="plastic" />
 		<RequiredItem identifier="steel" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="23,636,458,106" depth="0.55" origin="0.49936455,0.42708096" />
+	<Sprite texture="weapons_Render04.png" sourcerect="23,636,458,106" depth="0.55" origin="0.49936455,0.42708096" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="45,8" handle1="-65,-6" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect" /> <!--holdangle="-40"-->
 	<RangedWeapon reload="1.5" barrelpos="27.5,6" spread="3" unskilledspread="12" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -199,7 +199,7 @@
 		<RequiredItem identifier="titaniumaluminiumalloy" />
 		<RequiredItem identifier="titaniumaluminiumalloy" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="26,747,466,113" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="26,747,466,113" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,8" handle1="-55,-6" handle2="25,0" holdangle="-40" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon reload="1" barrelpos="27,3" spread="1" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -246,7 +246,7 @@
 	<Deconstruct time="2">
 		<Item identifier="awp" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="27,902,540,137" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="27,902,540,137" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="65,5" handle1="-100,-15" handle2="10,-30" holdangle="-40" msg="ItemMsgPickUpSelect">
 		<StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.0" setvalue="true" />
@@ -347,7 +347,7 @@
 		<Item identifier="titaniumaluminiumalloy" />
 		<Item identifier="titaniumaluminiumalloy" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="614,160,535,128" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="614,160,535,128" depth="0.55" origin="0.5,0.5" />
 	<Body width="180" height="45" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="25,-10" handle1="-60,-15" handle2="250,-15" holdangle="-40" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon barrelpos="45,10" spread="1" unskilledspread="20" combatPriority="80" reload="1" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -384,7 +384,7 @@
 	<Deconstruct time="2">
 		<Item identifier="aa12" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="611,337,438,162" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="611,337,438,162" depth="0.55" origin="0.5,0.5" />
 	<Body width="180" height="45" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="50,-10" handle1="-50,-30" handle2="150,-20" holdangle="-40" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon barrelpos="45,10" spread="8" unskilledspread="30" combatPriority="80" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -468,7 +468,7 @@
 	<Deconstruct time="2">
 		<Item identifier="rcsr7" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="613,6,190,114" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="613,6,190,114" depth="0.55" origin="0.5,0.5" />
 	<Body width="72" height="40" density="50" />
 	<Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="90,10" handle1="-50,-20" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon barrelpos="14,6" reload="1.5" spread="0" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -512,7 +512,7 @@
 		<Item identifier="plastic" />
 		<Item identifier="steel" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="610,520,365,179" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="610,520,365,179" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="20,-10" aimpos="26,-10" handle1="0,-6" handle2="280,18" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<RangedWeapon reload="0.1" barrelpos="14,6" spread="6" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -565,7 +565,7 @@
 		<RequiredItem identifier="titaniumaluminiumalloy" />
 		<RequiredItem identifier="titaniumaluminiumalloy" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="612,727,337,181" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="612,727,337,181" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-5,35" handle2="160,35" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<RangedWeapon reload="0.04" barrelpos="14,6" spread="16" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -610,7 +610,7 @@
 	<Deconstruct time="2">
 		<Item identifier="p90" />
 	</Deconstruct>
-	<Sprite texture="Weapons_Render04.png" sourcerect="1240,9,340,167" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="weapons_Render04.png" sourcerect="1240,9,340,167" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="30,10" handle1="65,-40" handle2="160,-40" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<RangedWeapon reload="0.04" barrelpos="14,6" spread="3" unskilledspread="22" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -651,7 +651,7 @@
 	<Deconstruct time="10">
 		<Item identifier="mgl" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_render04.png" sourcerect="1278,202,429,173" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1278,202,429,173" depth="0.55" origin="0.5,0.5" />
 	<Body width="170" height="40" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<RangedWeapon barrelpos="49,10" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
