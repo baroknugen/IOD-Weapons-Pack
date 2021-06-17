@@ -28,7 +28,7 @@
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="17,32,454,126" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="32,-5" aimpos="42,0" handle1="-50,-10" handle2="600,7" holdangle="-50" msg="ItemMsgPickUpSelect" />
-	<RangedWeapon reload="0.17" barrelpos="29,2" spread="9" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="0.17" barrelpos="29,10" spread="9" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -72,7 +72,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="24,160,426,230" depth="0.55" origin="0.5006582,0.5326682" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="35,0" handle1="-48,-38" handle2="140,7" holdangle="-40" msg="ItemMsgPickUpSelect" />
-	<RangedWeapon reload="0.13" barrelpos="29.5,2" spread="5" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="0.13" barrelpos="29.5,4" spread="5" unskilledspread="25" combatPriority="90" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
@@ -108,10 +108,10 @@
 	</Deconstruct>
 	<Sprite texture="weapons_Render04.png" sourcerect="23,410,524,174" depth="0.55" origin="0.44556084,0.39830142" />
 	<Body width="140" height="60" density="50" />
-	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="25,10" handle1="-50,-55" handle2="160,-50" holdangle="-40" msg="ItemMsgPickUpSelect">
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="25,0" handle1="-50,-55" handle2="160,-30" holdangle="-40" msg="ItemMsgPickUpSelect">
 		<StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.0" setvalue="true" />
 	</Holdable>
-	<RangedWeapon reload="0.18" barrelpos="24.5,4" spread="4" unskilledspread="36" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="0.18" barrelpos="32,0" spread="4" unskilledspread="36" combatPriority="85" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -158,7 +158,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="23,636,458,106" depth="0.55" origin="0.49936455,0.42708096" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-5" aimpos="45,8" handle1="-65,-6" handle2="20,0" holdangle="-40" msg="ItemMsgPickUpSelect" /> <!--holdangle="-40"-->
-	<RangedWeapon reload="1.5" barrelpos="27.5,6" spread="3" unskilledspread="12" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="1.5" barrelpos="50,8" spread="3" unskilledspread="12" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -202,7 +202,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="26,747,466,113" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,8" handle1="-55,-6" handle2="25,0" holdangle="-40" msg="ItemMsgPickUpSelect" />
-	<RangedWeapon reload="1" barrelpos="27,3" spread="1" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="1" barrelpos="50,6" spread="1" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Mods/hoxpox/Weapons/assaultsight2wlaser.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Mods/hoxpox/Weapons/assaultsight2wlaser.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -219,10 +219,7 @@
 	</RangedWeapon>
 	<ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="bullet">
 		<Containable items="snipermag" />
-	</ItemContainer>
-	<LightComponent LightColor="0.78,0.96,0.98,1.0" range="400" powerconsumption="0" IsOn="false" canbeselected="true" >
-		<LightTexture texture="Content/Lights/lightcone.png" origin="-0.03, 0.496" size="0.95,0.8" />
-	</LightComponent>
+	</ItemContainer>	
 	<CustomInterface canbeselected="true" drawhudwhenequipped="true">
 	<GuiFrame relativesize="0.09,0.06" anchor="BottomLeft" absoluteoffset="20,128" style="ItemUI" />
 	<TickBox text="Gunlight">
@@ -251,7 +248,7 @@
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="42,-5" aimpos="65,5" handle1="-100,-15" handle2="10,-30" holdangle="-40" msg="ItemMsgPickUpSelect">
 		<StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.0" setvalue="true" />
 	</Holdable>
-	<RangedWeapon reload="1.8" barrelpos="22,5" spread="0" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="1.8" barrelpos="50,10" spread="0" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -350,7 +347,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="614,160,535,128" depth="0.55" origin="0.5,0.5" />
 	<Body width="180" height="45" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="25,-10" handle1="-60,-15" handle2="250,-15" holdangle="-40" msg="ItemMsgPickUpSelect" />
-	<RangedWeapon barrelpos="45,10" spread="1" unskilledspread="20" combatPriority="80" reload="1" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon barrelpos="45,16.5" spread="1" unskilledspread="20" combatPriority="80" reload="1" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
@@ -387,7 +384,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="611,337,438,162" depth="0.55" origin="0.5,0.5" />
 	<Body width="180" height="45" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="50,-10" handle1="-50,-30" handle2="150,-20" holdangle="-40" msg="ItemMsgPickUpSelect" />
-	<RangedWeapon barrelpos="45,10" spread="8" unskilledspread="30" combatPriority="80" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon barrelpos="35,12" spread="8" unskilledspread="30" combatPriority="80" reload="0.4" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -515,7 +512,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="610,520,365,179" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="20,-10" aimpos="26,-10" handle1="0,-6" handle2="280,18" holdangle="-40" msg="ItemMsgPickUpSelect"/>
-	<RangedWeapon reload="0.1" barrelpos="14,6" spread="6" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="0.1" barrelpos="33,16" spread="6" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -568,7 +565,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="612,727,337,181" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-5,35" handle2="160,35" holdangle="-40" msg="ItemMsgPickUpSelect"/>
-	<RangedWeapon reload="0.04" barrelpos="14,6" spread="16" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="0.04" barrelpos="30,16" spread="16" unskilledspread="30" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -613,7 +610,7 @@
 	<Sprite texture="weapons_Render04.png" sourcerect="1240,9,340,167" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="30,10" handle1="65,-40" handle2="160,-40" holdangle="-40" msg="ItemMsgPickUpSelect"/>
-	<RangedWeapon reload="0.04" barrelpos="14,6" spread="3" unskilledspread="22" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+	<RangedWeapon reload="0.04" barrelpos="30,4" spread="3" unskilledspread="22" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -653,16 +650,16 @@
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1278,202,429,173" depth="0.55" origin="0.5,0.5" />
 	<Body width="170" height="40" density="50" />
-	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,-10" handle1="-15,-6" handle2="26,7" holdangle="-40" msg="ItemMsgPickUpSelect"/>
-	<RangedWeapon barrelpos="49,10" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
+	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,0" handle1="-80,-40" handle2="190,-25" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+	<RangedWeapon barrelpos="80,10" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-		<ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.15" />
+		<!-- <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.15" /> -->
 		<Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" selectionmode="Random"/>
 		<Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" />
 		<Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" />
 		<StatusEffect type="OnUse">
-			<Explosion range="150.0" force="5" shockwave="true" smoke="false" flames="true" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
+			<Explosion range="150.0" force="5" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
 		</StatusEffect>
 		<RequiredItems items="grenade" type="Contained" msg="ItemMsgAmmoRequired" />
 		<RequiredSkill identifier="weapons" level="60" />
