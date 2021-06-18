@@ -66,6 +66,18 @@
 
 <Override>
 <Item name="Shotgun Shell" identifier="shotgunshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+	<PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="1"/>
+	<PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="1"/>
+	<PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.33"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="4" spawnprobability="0.33"/>
+	<Price baseprice="4" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="4" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="12" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
+	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="24">
 		<RequiredSkill identifier="weapons" level="40" />
 		<RequiredItem identifier="plastic"/>
@@ -73,9 +85,9 @@
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="plastic"/>
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="plastic" outcondition="0.0417"/>
+		<RequiredItem identifier="lead" outcondition="0.0417"/>
+		<RequiredItem identifier="flashpowder" outcondition="0.0417" />
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1355,641,52,78" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
@@ -120,13 +132,27 @@
 -->
 <Override>
 <Item name="Revolver Round" identifier="revolverround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+	<PreferredContainer primary="revolver" minamount="6" maxamount="6" spawnprobability="1"/>
+	<PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.25"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="7" spawnprobability="0.25"/>
+	<Price baseprice="30" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" minavailable="6" />
+		<Price locationtype="city" multiplier="1.25" minavailable="12" />
+		<Price locationtype="research" multiplier="1.25" minavailable="6" />
+		<Price locationtype="military" multiplier="0.9" minavailable="24" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="12" />
+	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="32">
 		<RequiredSkill identifier="weapons" level="40" />
 		<RequiredItem identifier="steel"/>
 		<RequiredItem identifier="lead"/>
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
-	<Deconstruct time="30">
+	<Deconstruct time="1">
+		<RequiredItem identifier="steel" outcondition="0.03125"/>
+		<RequiredItem identifier="lead" outcondition="0.03125"/>
+		<RequiredItem identifier="flashpowder" outcondition="0.03125"/>
 	</Deconstruct>
 	<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="1458,642,35,70" origin="0.5,0.5" />
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
@@ -151,11 +177,11 @@
 		<RequiredItem identifier="flashpowder"/>
 		<RequiredItem identifier="titaniumaluminiumalloy"/>
 	</Fabricate>
-	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="titaniumaluminiumalloy" mincondition="0.9"/>
+	<Deconstruct time="2">
+		<RequiredItem identifier="steel" outcondition="0.0625"/>
+		<RequiredItem identifier="lead" outcondition="0.0625"/>
+		<RequiredItem identifier="flashpowder" outcondition="0.0625"/>
+		<RequiredItem identifier="titaniumaluminiumalloy" outcondition="0.0625"/>
 	</Deconstruct>
 	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
