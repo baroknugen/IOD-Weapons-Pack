@@ -26,14 +26,14 @@
 		<RequiredItem identifier="plastic" />
 		<RequiredItem identifier="steel" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="17,32,454,126" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_Render04.png" sourcerect="17,32,454,126" depth="0.55" origin="0.5,0.5" />
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="32,-5" aimpos="42,0" handle1="-50,-10" handle2="600,7" holdangle="-50" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon reload="0.17" barrelpos="29,10" spread="9" unskilledspread="25" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/58.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/58.ogg" type="OnUse" range="3000" />
 		<StatusEffect type="OnUse">
 			<Explosion range="150.0" force="1.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="16.0" />
 		</StatusEffect>
@@ -78,8 +78,8 @@
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/86spmgmk3.ogg" type="OnUse" range="3000" />
-		<Sound file="Mods/hoxpox/Weapons/spmgmk3raise.ogg" type="OnSecondaryUse" range="500" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/86spmgmk3.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/spmgmk3raise.ogg" type="OnSecondaryUse" range="500" />
 		<StatusEffect type="OnUse">
 			<Explosion range="140.0" force="2.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
 		</StatusEffect>
@@ -118,7 +118,7 @@
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/68mtrmk2.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/68mtrmk2.ogg" type="OnUse" range="3000" />
 		<!--try to add speed multiplier when aiming-->
 		<StatusEffect type="OnUse">
 			<Explosion range="150.0" force="1.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
@@ -166,7 +166,7 @@
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/47refit.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/47refit.ogg" type="OnUse" range="3000" />
 		<StatusEffect type="OnUse">
 			<Explosion range="100.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="15.0" />
 		</StatusEffect>
@@ -208,10 +208,10 @@
 	<Body width="140" height="60" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-5" aimpos="45,8" handle1="-55,-6" handle2="25,0" holdangle="-40" msg="ItemMsgPickUpSelect" />
 	<RangedWeapon reload="1" barrelpos="50,6" spread="1" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
-		<Crosshair texture="Mods/hoxpox/Weapons/assaultsight2wlaser.png" sourcerect="0,256,256,256" />
-		<CrosshairPointer texture="Mods/hoxpox/Weapons/assaultsight2wlaser.png" sourcerect="256,256,256,256" />
+		<Crosshair texture="Mods/IOD-Weapons-Pack/Weapons/assaultsight2wlaser.png" sourcerect="0,256,256,256" />
+		<CrosshairPointer texture="Mods/IOD-Weapons-Pack/Weapons/assaultsight2wlaser.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/47s.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/47s.ogg" type="OnUse" range="3000" />
 		<StatusEffect type="OnUse">
 			<Explosion range="100.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="30.0" />
 		</StatusEffect>
@@ -258,7 +258,7 @@
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/weapons/68.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/weapons/68.ogg" type="OnUse" range="3000" />
 		<StatusEffect type="OnUse">
 			<Explosion range="150.0" force="3" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="60.0" />
 		</StatusEffect>
@@ -358,13 +358,13 @@
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/6g.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/6g.ogg" type="OnUse" range="3000" />
 		<StatusEffect type="OnUse">
 			<Explosion range="225.0" force="5" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="18.0" />
 		</StatusEffect>
 		<StatusEffect type="OnUse" delay="1.2">
-			<Sound file="Mods/hoxpox/Weapons/bigshotgunload1.ogg" type="OnUse" range="3000" selectionmode="Random" />
-			<Sound file="Mods/hoxpox/weapons/bigshotgunload2.ogg" type="OnUse" range="3000" />
+			<Sound file="Mods/IOD-Weapons-Pack/Weapons/bigshotgunload1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+			<Sound file="Mods/IOD-Weapons-Pack/weapons/bigshotgunload2.ogg" type="OnUse" range="3000" />
 		</StatusEffect>
 		<RequiredItems items="shotgunshell" type="Contained" msg="ItemMsgAmmoRequired" />
 		<RequiredSkill identifier="weapons" level="60" />
@@ -396,7 +396,7 @@
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
-		<Sound file="Mods/hoxpox/Weapons/10g.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/10g.ogg" type="OnUse" range="3000" />
 		<StatusEffect type="OnUse">
 			<Explosion range="170.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="30.0" />
 		</StatusEffect>
@@ -461,7 +461,7 @@
 </Override>
 
 <Item name="Revolver Magnum .357" identifier="rcsr7" description="This revolver has incredibly high stopping power, especially when coupled with Revolver rounds Special. Make sure to hit your intended target as it can easily blow a hole in the wall. Uses Revolver Round and Revolver Round Special."
-		description="Rapid Conversion Survival Revolver 7. This Unique Survival Revolver can be quickly and easily field converted to fire either .38s or Special 10mm Rounds." category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.26" impactsoundtag="impact_metal_light">
+		category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.26" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.23" />
 	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.03" />
 	<Price baseprice="2000" soldeverywhere="false">
@@ -480,7 +480,7 @@
 	<RangedWeapon barrelpos="14,6" reload="1.5" spread="0" unskilledspread="8" combatPriority="70" drawhudwhenequipped="true" crosshairscale="0.2">
 		<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-		<Sound file="Mods/hoxpox/Weapons/.45revolver.ogg" type="OnUse" range="3000" />
+		<Sound file="Mods/IOD-Weapons-Pack/Weapons/.45revolver.ogg" type="OnUse" range="3000" />
 		<ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
 		<StatusEffect type="OnUse">
 			<Explosion range="170.0" force="240" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
@@ -661,7 +661,7 @@
 	<Deconstruct time="10">
 		<Item identifier="mgl" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1278,202,429,173" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_Render04.png" sourcerect="1278,202,429,173" depth="0.55" origin="0.5,0.5" />
 	<Body width="170" height="40" density="50" />
 	<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="35,0" handle1="-80,-40" handle2="190,-25" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 	<RangedWeapon barrelpos="80,10" spread="1" unskilledspread="10" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.2">

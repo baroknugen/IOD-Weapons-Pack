@@ -90,7 +90,7 @@
 		<RequiredItem identifier="lead" outcondition="0.0417"/>
 		<RequiredItem identifier="flashpowder" outcondition="0.0417" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1355,641,52,78" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_Render04.png" sourcerect="1355,641,52,78" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" hitscancount="8" removeonhit="true" spread="15">
@@ -156,7 +156,7 @@
 		<RequiredItem identifier="lead" outcondition="0.03125"/>
 		<RequiredItem identifier="flashpowder" outcondition="0.03125"/>
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1458,642,35,70" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_Render04.png" sourcerect="1458,642,35,70" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">
@@ -185,7 +185,7 @@
 		<RequiredItem identifier="flashpowder" outcondition="0.0625"/>
 		<RequiredItem identifier="titaniumaluminiumalloy" outcondition="0.0625"/>
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_Render04.png" sourcerect="1511,625,36,85" depth="0.55" origin="0.5,0.5" />
+	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_Render04.png" sourcerect="1511,625,36,85" depth="0.55" origin="0.5,0.5" />
 	<Body width="40" height="14" density="40" />
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" removeonhit="true">

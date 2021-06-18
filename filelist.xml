@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="IOD Weapons Pack" path="Mods/IOD Weapons Pack/filelist.xml" corepackage="false" gameversion="0.13.3.11">
-  <Item file="Mods/IOD Weapons Pack/Weapons/Weapons.xml" />
-  <Item file="Mods/IOD Weapons Pack/Weapons/Cartriges.xml" />
-  <Item file="Mods/IOD Weapons Pack/Weapons/Mags.xml" />
-  <Item file="Mods/IOD Weapons Pack/remove_from_game.xml" />
+<contentpackage name="IOD-Weapons-Pack" path="Mods/IOD-Weapons-Pack/filelist.xml" corepackage="false" gameversion="0.14.6.0">
+  <Item file="Mods/IOD-Weapons-Pack/Weapons/Weapons.xml" />
+  <Item file="Mods/IOD-Weapons-Pack/Weapons/Cartriges.xml" />
+  <Item file="Mods/IOD-Weapons-Pack/Weapons/Mags.xml" />
+  <Item file="Mods/IOD-Weapons-Pack/remove_from_game.xml" />
 </contentpackage>
