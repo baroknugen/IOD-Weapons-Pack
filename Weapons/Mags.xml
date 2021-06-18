@@ -6,9 +6,9 @@
 
 
 
-<Item name="AR Magazine" identifier="armag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="AR Magazine" identifier="armag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="4" spawnprobability="0.03" />
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -40,7 +40,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="LMG Magazine" identifier="lmgmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="LMG Magazine" identifier="lmgmag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -74,7 +74,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="Sniper Magazine" identifier="snipermag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="Sniper Magazine" identifier="snipermag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
 	<Price baseprice="158" soldeverywhere="false">
@@ -108,7 +108,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="Sniper Magazine special" identifier="snipermagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="Sniper Magazine special" identifier="snipermagspecial" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -129,7 +129,7 @@
 		<RequiredItem identifier="lead" />
 		<RequiredItem identifier="uranium" mincondition="0.9" />
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/weapons_new.png" depth="0.54" sourcerect="1675,483,71,72" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_render04.png" depth="0.54" sourcerect="1675,483,71,72" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="sniperroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="sniperroundspecial" />
@@ -175,7 +175,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 -->
-<Item name="SMG magazine" identifier="smgmag" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="SMG magazine" identifier="smgmag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
@@ -211,7 +211,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="SMG magazine Special" identifier="smgmagspecial" scale="0.5" category="Equipment" maxstacksize="3" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="SMG magazine Special" identifier="smgmagspecial" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
@@ -236,7 +236,7 @@
 		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
 		<RequiredItem identifier="titanium" mincondition="0.9"/>
 	</Deconstruct>
-	<Sprite texture="Mods/hoxpox/Weapons/Weapons_new.png" depth="0.54" sourcerect="1517,470,53,105" origin="0.5,0.5" />
+	<Sprite texture="Mods/hoxpox/Weapons/weapons_render04.png" depth="0.54" sourcerect="1517,470,53,105" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smgroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smgroundspecial" />
