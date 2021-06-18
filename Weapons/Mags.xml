@@ -6,7 +6,7 @@
 
 
 
-<Item name="AR Magazine" identifier="armag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="AR Magazine" identifier="armag" scale="0.5" description="A magazine containing ammo for assault rifles, hold up to 30 rounds." category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="4" spawnprobability="0.03" />
 	<Price baseprice="158" soldeverywhere="false">
@@ -40,7 +40,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="LMG Magazine" identifier="lmgmag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="LMG Magazine" identifier="lmgmag" scale="0.5" description="A big box filled with ammo for the light machine gun, holds up to 50 rounds." category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -74,7 +74,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="Sniper Magazine" identifier="snipermag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="Sniper Magazine" identifier="snipermag" scale="0.5" description="A Magazine with ammo for snipers, hold up to 10 rounds." category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
 	<Price baseprice="158" soldeverywhere="false">
@@ -108,7 +108,7 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="Sniper Magazine special" identifier="snipermagspecial" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="Sniper Magazine special" identifier="snipermagspecial" scale="0.5" description="A magazine with special ammo for AWP that inflicts radiation poisoning, hold up to 10 rounds." category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -175,7 +175,8 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 -->
-<Item name="SMG magazine" identifier="smgmag" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="SMG magazine" identifier="smgmag" scale="0.5" description="A magazine that hold ammo for Sub-Machine guns, holds up to 50 rounds."
+		category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
@@ -211,7 +212,8 @@
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
 </Item>
 
-<Item name="SMG magazine Special" identifier="smgmagspecial" scale="0.5" category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
+<Item name="SMG magazine Special" identifier="smgmagspecial" scale="0.5" description="A magazine that holds ammo for Sub-Machine guns, holds up to 142 rounds."
+		category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
 	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />

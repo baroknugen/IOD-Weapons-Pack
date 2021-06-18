@@ -65,7 +65,8 @@
 </Item>
 
 <Override>
-<Item name="Shotgun Shell" identifier="shotgunshell" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+<Item name="Shotgun Shell" identifier="shotgunshell" description="A standard shotgun shell."
+		category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
 	<PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="1"/>
 	<PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="1"/>
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
@@ -131,7 +132,8 @@
 </Item>
 -->
 <Override>
-<Item name="Revolver Round" identifier="revolverround" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+<Item name="Revolver Round" identifier="revolverround" description="A revolver round that can be used in any revolver, aim true."
+		category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
 	<PreferredContainer primary="revolver" minamount="6" maxamount="6" spawnprobability="1"/>
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.25"/>
@@ -168,7 +170,8 @@
 </Item>
 </Override>
 
-<Item name="Revolver Round Special" identifier="revolverroundspecial" category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+<Item name="Revolver Round Special" identifier="revolverroundspecial" description="A stronger revolver round with higher caliber, used by the .357 revolver."
+		category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
 	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="16">
 		<RequiredSkill identifier="weapons" level="40" />
 		<RequiredItem identifier="steel"/>
