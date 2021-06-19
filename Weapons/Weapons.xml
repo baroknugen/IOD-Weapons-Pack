@@ -7,13 +7,16 @@
 
 <Item name="AR AK47" identifier="ak47" description="AR AK47: A weapon as old as time. Reliable, cheap, but at the same time you get what you pay for. To get this weapon to work as intended, even if submersed, the fire rate was lowered. Uses AR Magazines"
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.001" hideinmenus="true"/>
+	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
+	<PreferredContainer primary="secarmcab" minamount="1" maxamount="5" spawnprobability="1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.33"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="2" spawnprobability="0.4"/>
 	<Price baseprice="600" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" sold="false" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="1.55" minavailable="1" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
+		<Price locationtype="outpost" multiplier="1.5" minavailable="5"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="5" />
+		<Price locationtype="research" multiplier="1.25" minavailable="5"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="10" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="5"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="40" />
@@ -53,12 +56,15 @@
 
 <Item name="AR SCAR" identifier="scar" description="AR SCAR: A slightly more modern weapon, has decent fire rate and great accuracy. Though a bit expensive is usually a symbol of veterancy in the Europan seas. Uses AR Magazines"
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light" hideinmenus="false">
+	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
 	<Price baseprice="1200" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.1" sold="false" />
-		<Price locationtype="city" multiplier="1.35" sold="false" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="1.55" sold="false" />
-		<Price locationtype="mine" multiplier="1.0" sold="false" />
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="1" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="60" />
@@ -100,11 +106,11 @@
 <Item name="LMG 240b" identifier="240b" description="LMG 240b: A true behemoth of a weapon, though fire rate has been incredibly reduced, the increase in caliber size has more than made up for it. Note: due to the weight of the weapon and the sheer recoil walking while firing is impossible. Uses LMG magazines."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light" hideinmenus="false">
 	<Price baseprice="2000" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1" sold="false" />
-		<Price locationtype="city" multiplier="1.75" sold="false" />
-		<Price locationtype="research" multiplier="1.5" sold="false" />
-		<Price locationtype="military" multiplier="1.85" sold="false" />
-		<Price locationtype="mine" multiplier="1" sold="false" />
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="0" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="1" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Deconstruct time="2">
 		<Item identifier="240b" />
@@ -139,14 +145,16 @@
 
 <Item name="Sniper SKS" identifier="snipersks" description="Sniper SKS: This sniper is usually seen as a starter sniper due to its ease of use and many laugh at it. Though not held in high regard, its generally preferred to have one of these instead of a knife when dealing with Husks. Uses Sniper Magazines."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.26" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.1" />
+	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
+	<PreferredContainer primary="secarmcab" minamount="1" maxamount="5" spawnprobability="1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.33"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="2" spawnprobability="0.4"/>
 	<Price baseprice="600" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.30" minavailable="2" />
-		<Price locationtype="city" multiplier="1.00" minavailable="1" />
-		<Price locationtype="research" multiplier="0.50" sold="false" />
-		<Price locationtype="military" multiplier="1.00" minavailable="1" />
-		<Price locationtype="mine" multiplier="1.10" minavailable="1" />
+		<Price locationtype="outpost" multiplier="1.5" minavailable="5"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="5" />
+		<Price locationtype="research" multiplier="1.25" minavailable="5"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="10" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="5"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="40" />
@@ -186,12 +194,15 @@
 
 <Item name="Sniper NOIGANT" identifier="noigant" description="Sniper Noigant: A sniper that is generally held in high regards. Higher fire rate than the SKS and more accurate, the main draw back is its high production cost. Uses Sniper Magazines."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.26" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
 	<Price baseprice="1200" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.15" sold="false" />
-		<Price locationtype="city" multiplier="1.55" sold="false" />
-		<Price locationtype="research" multiplier="1.58" sold="false" />
-		<Price locationtype="military" multiplier="1.8" sold="false" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="1" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="60" />
@@ -239,12 +250,12 @@
 <Item name="Sniper AWP" identifier="awp" description="Sniper AWP: A true beast, though it has the slowest fire rate it has the best accuracy. Furthermore it can also use the special, stronger ammunition making it a true legend below the surface. Uses Sniper Magazines and Sniper Magazines Special."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.26" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.003" />
-		<Price baseprice="2000" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.15" sold="false" />
-		<Price locationtype="city" multiplier="1.28" sold="false" />
-		<Price locationtype="research" multiplier="1.2" minavailable="1" />
-		<Price locationtype="military" multiplier="1.55" minavailable="1" />
-		<Price locationtype="mine" multiplier="1" sold="false" />
+	<Price baseprice="2000" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="0" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="1" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Deconstruct time="2">
 		<Item identifier="awp" />
@@ -282,11 +293,11 @@
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.33"/>
 	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.33"/>
 	<Price baseprice="600" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
-		<Price locationtype="city" multiplier="1.25" minavailable="1" />
-		<Price locationtype="research" multiplier="1.25" sold="false"/>
-		<Price locationtype="military" multiplier="0.9" minavailable="3" />
-		<Price locationtype="mine" multiplier="1.25" sold="false"/>
+		<Price locationtype="outpost" multiplier="1.5" minavailable="5"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="5" />
+		<Price locationtype="research" multiplier="1.25" minavailable="5"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="10" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="5"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="40" />
@@ -333,12 +344,15 @@
 
 <Item name="Shotgun SPAS12" identifier="spas12" description="Shotgun SPAS12: A shotgun that due to its reliability has found its way to Europa. Sporting a slightly higher fire rate and at the same time being able to hold 8 shells makes this a shotgun preferred by many. Uses Shotgun Shells."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
+	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
 	<Price baseprice="1200" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.3" sold="false" />
-		<Price locationtype="city" multiplier="1.85" sold="false" />
-		<Price locationtype="research" multiplier="1.15" sold="false" />
-		<Price locationtype="military" multiplier="1.55" minavailable="1" />
-		<Price locationtype="mine" multiplier="1.05" sold="false" />
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="1" minavailable="3" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="60" />
@@ -379,12 +393,12 @@
 <Item name="Shotgun AA12" identifier="aa12" description="Few have seen this gun and it was first written off as a rumor. While the sightings of the AA12 have become more frequent it is still considered incredibly rare. And while the sightings are few, there are even fewer who have seen it from the business end and lived to tell the tale. Uses Shotgun Shells."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.05" />
-		<Price baseprice="2000" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.25" sold="false" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="1.20" minavailable="1" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
+	<Price baseprice="2000" soldeverywhere="false">
+		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="0" />
+		<Price locationtype="research" multiplier="1.25" sold="false"/>
+		<Price locationtype="military" multiplier="1" minavailable="1" />
+		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Deconstruct time="2">
 		<Item identifier="aa12" />
@@ -418,11 +432,11 @@
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.33"/>
 	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.5"/>
 	<Price baseprice="600" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
-		<Price locationtype="city" multiplier="1.25" minavailable="1" />
-		<Price locationtype="research" multiplier="1.25" sold="false"/>
-		<Price locationtype="military" multiplier="0.9" minavailable="3" />
-		<Price locationtype="mine" multiplier="1.25" sold="false"/>
+		<Price locationtype="outpost" multiplier="1.5" minavailable="5"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="5" />
+		<Price locationtype="research" multiplier="1.25" minavailable="5"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="10" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="5"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="40" />
@@ -462,15 +476,13 @@
 
 <Item name="Revolver Magnum .357" identifier="rcsr7" description="This revolver has incredibly high stopping power, especially when coupled with Revolver rounds Special. Make sure to hit your intended target as it can easily blow a hole in the wall. Uses Revolver Round and Revolver Round Special."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.26" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.23" />
-	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0.03" />
-	<Price baseprice="2000" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false" />
-		<Price locationtype="city" multiplier="1.35" minavailable="1" />
-		<Price locationtype="research" multiplier="1.25" sold="false" />
-		<Price locationtype="military" multiplier="0.95" minavailable="2" />
-		<Price locationtype="mine" multiplier="1.25" sold="false" />
-	</Price>
+		<Price baseprice="2000" soldeverywhere="false">
+			<Price locationtype="outpost" multiplier="1.5" sold="false"/>
+			<Price locationtype="city" multiplier="1.25" minavailable="0" />
+			<Price locationtype="research" multiplier="1.25" sold="false"/>
+			<Price locationtype="military" multiplier="1" minavailable="1" />
+			<Price locationtype="mine" multiplier="1.25" sold="false"/>
+		</Price>
 	<Deconstruct time="2">
 		<Item identifier="rcsr7" />
 	</Deconstruct>
@@ -498,15 +510,15 @@
 <Item name="SMG UMP" identifier="ump" description="Popularized due to its cheap price and high performance. Definitely better weapons out there, but also not a bad weapon. SMG’s have lower caliber, meaning lower damage to walls and no stun. Uses SMG Magazines."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
-	<PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1"/>
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.33"/>
-	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.4"/>
+	<PreferredContainer primary="secarmcab" minamount="1" maxamount="5" spawnprobability="1"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="1" maxamount="2" spawnprobability="0.33"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="2" spawnprobability="0.4"/>
 	<Price baseprice="600" soldeverywhere="false">
-		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
-		<Price locationtype="city" multiplier="1.25" minavailable="1" />
-		<Price locationtype="research" multiplier="1.25" sold="false"/>
-		<Price locationtype="military" multiplier="0.9" minavailable="2" />
-		<Price locationtype="mine" multiplier="1.25" sold="false"/>
+		<Price locationtype="outpost" multiplier="1.5" minavailable="5"/>
+		<Price locationtype="city" multiplier="1.25" minavailable="5" />
+		<Price locationtype="research" multiplier="1.25" minavailable="5"/>
+		<Price locationtype="military" multiplier="0.9" minavailable="10" />
+		<Price locationtype="mine" multiplier="1.25" minavailable="5"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
 		<RequiredSkill identifier="weapons" level="40" />
@@ -552,14 +564,13 @@
 <Item name="SMG Vector" identifier="vector" description="Incredible fire rate, but relatively low accuracy, can replace a chicken with lead in less than 1.5 seconds. SMG’s have lower caliber, meaning lower damage to walls and no stun. Uses SMG Magazines."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
 	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
-	<PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1"/>
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.33"/>
-	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.4"/>
+	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
+	<PreferredContainer primary="abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.15"/>
 	<Price baseprice="1200" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
-		<Price locationtype="city" multiplier="1.25" minavailable="1" />
+		<Price locationtype="city" multiplier="1.25" minavailable="2" />
 		<Price locationtype="research" multiplier="1.25" sold="false"/>
-		<Price locationtype="military" multiplier="0.9" minavailable="2" />
+		<Price locationtype="military" multiplier="1" minavailable="3" />
 		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="120">
@@ -605,15 +616,11 @@
 
 <Item name="SMG P90" identifier="p90" description="Strange design that allows for large magazines, high accuracy and high fire rate. Few have seen this weapon, and some don’t even understand it is a weapon! Blame the Europan education system.  SMG’s have lower caliber, meaning lower damage to walls and no stun. Uses SMG Magazines and SMG Magazines Special."
 		category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,weapon,gun" Scale="0.22" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="weaponholder" spawnprobability="0.1"/>
-	<PreferredContainer primary="secarmcab" minamount="1" maxamount="2" spawnprobability="1"/>
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="2" spawnprobability="0.33"/>
-	<PreferredContainer primary="abandonedsecarmcab" minamount="1" maxamount="1" spawnprobability="0.4"/>
 	<Price baseprice="2000" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
-		<Price locationtype="city" multiplier="1.25" minavailable="1" />
+		<Price locationtype="city" multiplier="1.25" minavailable="0" />
 		<Price locationtype="research" multiplier="1.25" sold="false"/>
-		<Price locationtype="military" multiplier="0.9" minavailable="2" />
+		<Price locationtype="military" multiplier="1" minavailable="1" />
 		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Deconstruct time="2">
@@ -655,7 +662,7 @@
 		<Price locationtype="outpost" multiplier="1.5" sold="false"/>
 		<Price locationtype="city" multiplier="1.25" sold="false"/>
 		<Price locationtype="research" multiplier="1.25" sold="false"/>
-		<Price locationtype="military" multiplier="0.9" minavailable="1" />
+		<Price locationtype="military" multiplier="1" minavailable="0" />
 		<Price locationtype="mine" multiplier="1.25" sold="false"/>
 	</Price>
 	<Deconstruct time="10">
