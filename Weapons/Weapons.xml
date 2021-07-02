@@ -87,7 +87,6 @@
 		<CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
 		<ParticleEmitter particle="muzzleflash" particleamount="2" velocitymin="0" velocitymax="0" />
 		<Sound file="Mods/IOD-Weapons-Pack/Weapons/86spmgmk3.ogg" type="OnUse" range="3000" />
-		<Sound file="Mods/IOD-Weapons-Pack/Weapons/spmgmk3raise.ogg" type="OnSecondaryUse" range="500" />
 		<StatusEffect type="OnUse">
 			<Explosion range="140.0" force="2.2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
 		</StatusEffect>
