@@ -7,8 +7,9 @@
 
 
 <Item name="AR Magazine" identifier="armag" scale="0.5" description="A magazine containing ammo for assault rifles, hold up to 30 rounds." category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="4" spawnprobability="0.03" />
+	<PreferredContainer primary="secarmcab" minamount="4" maxamount="4" spawnprobability="1" />
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="4" spawnprobability="0.5" />
+	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="4" spawnprobability="0.5" />
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -18,14 +19,14 @@
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="4">
 		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="iron"/>
 		<RequiredItem identifier="flashpowder"/>
 		<RequiredItem identifier="aluminium"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="aluminium"/>
+		<RequiredItem identifier="iron" mincondition="0.9" outcondition="0.25"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9" outcondition="0.25"/>
+		<RequiredItem identifier="aluminium" outcondition="0.25"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_render04.png" depth="0.54" sourcerect="1337,469,76,112" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
@@ -56,10 +57,10 @@
 		<RequiredItem identifier="aluminium"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="aluminium"/>
-		<RequiredItem identifier="magnesium" mincondition="0.9"/>
+		<RequiredItem identifier="lead" mincondition="0.9" outcondition="0.5"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9" outcondition="0.5"/>
+		<RequiredItem identifier="aluminium" outcondition="0.5"/>
+		<RequiredItem identifier="magnesium" mincondition="0.9" outcondition="0.5"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_render04.png" depth="0.54" sourcerect="1229,454,73,121" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
@@ -75,8 +76,9 @@
 </Item>
 
 <Item name="Sniper Magazine" identifier="snipermag" scale="0.5" description="A Magazine with ammo for snipers, hold up to 10 rounds." category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.08" />
-	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.03" />
+	<PreferredContainer primary="secarmcab" minamount="4" maxamount="4" spawnprobability="1" />
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="4" spawnprobability="0.5" />
+	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="4" spawnprobability="0.5" />
 	<Price baseprice="158" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -91,9 +93,9 @@
 		<RequiredItem identifier="aluminium" />
 	</Fabricate>
 	<Deconstruct time="15">
-		<RequiredItem identifier="steel" />
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="aluminium" />
+		<RequiredItem identifier="steel" outcondition="0.25"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9" outcondition="0.25"/>
+		<RequiredItem identifier="aluminium" outcondition="0.25"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_render04.png" depth="0.54" sourcerect="1590,484,72,69" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
@@ -124,10 +126,10 @@
 		<RequiredItem identifier="uranium" />
 	</Fabricate>
 	<Deconstruct time="15">
-		<RequiredItem identifier="steel" />
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="lead" />
-		<RequiredItem identifier="uranium" mincondition="0.9" />
+		<RequiredItem identifier="steel" outcondition="0.5"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9" outcondition="0.5"/>
+		<RequiredItem identifier="lead" outcondition="0.5"/>
+		<RequiredItem identifier="uranium" mincondition="0.9" outcondition="0.5"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_render04.png" depth="0.54" sourcerect="1675,483,71,72" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
@@ -177,10 +179,9 @@
 -->
 <Item name="SMG magazine" identifier="smgmag" scale="0.5" description="A magazine that hold ammo for Sub-Machine guns, holds up to 50 rounds."
 		category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
-	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
-	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.04" />
+	<PreferredContainer primary="secarmcab" minamount="4" maxamount="4" spawnprobability="1" />
+	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="4" spawnprobability="0.5" />
+	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="4" spawnprobability="0.5" />
 	<Price baseprice="110" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -195,15 +196,15 @@
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="plastic"/>
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
+		<RequiredItem identifier="plastic" outcondition="0.25"/>
+		<RequiredItem identifier="lead" mincondition="0.9" outcondition="0.25"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9" outcondition="0.25"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_render04.png" depth="0.54" sourcerect="1447,470,48,103" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smground" />
-		<StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-1.7" disabledeltatime="true">
 			<SpawnItem identifiers="smground" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>
@@ -214,10 +215,6 @@
 
 <Item name="SMG magazine Special" identifier="smgmagspecial" scale="0.5" description="A magazine that holds ammo for Sub-Machine guns, holds up to 142 rounds."
 		category="Equipment" maxstacksize="4" cargocontaineridentifier="metalcrate" linkable="true" tags="smallitem" impactsoundtag="impact_metal_light">
-	<PreferredContainer primary="sm45" minamount="1" maxamount="1" spawnprobability="0.5" />
-	<PreferredContainer primary="secarmcab" minamount="0" maxamount="1" spawnprobability="0.25" />
-	<PreferredContainer primary="wreckarmcab" minamount="0" maxamount="2" spawnprobability="0.09" />
-	<PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.04" />
 	<Price baseprice="110" soldeverywhere="false">
 		<Price locationtype="outpost" multiplier="1.5" sold="false" />
 		<Price locationtype="city" multiplier="1.25" minavailable="2" />
@@ -233,16 +230,16 @@
 		<RequiredItem identifier="titanium"/>
 	</Fabricate>
 	<Deconstruct time="12">
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead" mincondition="0.9"/>
-		<RequiredItem identifier="flashpowder" mincondition="0.9"/>
-		<RequiredItem identifier="titanium" mincondition="0.9"/>
+		<RequiredItem identifier="steel" outcondition="0.5"/>
+		<RequiredItem identifier="lead" mincondition="0.9" outcondition="0.5"/>
+		<RequiredItem identifier="flashpowder" mincondition="0.9" outcondition="0.5"/>
+		<RequiredItem identifier="titanium" mincondition="0.9" outcondition="0.5"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_render04.png" depth="0.54" sourcerect="1517,470,53,105" origin="0.5,0.5" />
 	<Body width="30" height="40" density="50" />
 	<ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smgroundspecial" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
 		<Containable items="smgroundspecial" />
-		<StatusEffect type="OnUse" target="This" condition="-0.7" disabledeltatime="true">
+		<StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
 			<SpawnItem identifiers="smgroundspecial" spawnposition="ThisInventory" />
 		</StatusEffect>
 	</ItemContainer>

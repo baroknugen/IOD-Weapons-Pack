@@ -66,7 +66,7 @@
 
 <Override>
 <Item name="Shotgun Shell" identifier="shotgunshell" description="A standard shotgun shell."
-		category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+		category="Equipment" maxstacksize="24" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
 	<PreferredContainer primary="shotgun" minamount="6" maxamount="6" spawnprobability="1"/>
 	<PreferredContainer primary="shotgununique" minamount="2" maxamount="2" spawnprobability="1"/>
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
@@ -133,7 +133,7 @@
 -->
 <Override>
 <Item name="Revolver Round" identifier="revolverround" description="A revolver round that can be used in any revolver, aim true."
-		category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+		category="Equipment" maxstacksize="32" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
 	<PreferredContainer primary="revolver" minamount="6" maxamount="6" spawnprobability="1"/>
 	<PreferredContainer primary="secarmcab" minamount="0" maxamount="10" spawnprobability="0.25"/>
 	<PreferredContainer primary="wrecksecarmcab" minamount="0" maxamount="3" spawnprobability="0.25"/>
@@ -147,13 +147,13 @@
 	</Price>
 	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="32">
 		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="iron"/>
+		<RequiredItem identifier="aluminium"/>
 		<RequiredItem identifier="flashpowder"/>
 	</Fabricate>
-	<Deconstruct time="1">
-		<RequiredItem identifier="steel" outcondition="0.03125"/>
-		<RequiredItem identifier="lead" outcondition="0.03125"/>
+	<Deconstruct time="0.2">
+		<RequiredItem identifier="iron" outcondition="0.03125"/>
+		<RequiredItem identifier="aluminium" outcondition="0.03125"/>
 		<RequiredItem identifier="flashpowder" outcondition="0.03125"/>
 	</Deconstruct>
 	<Sprite texture="Mods/IOD-Weapons-Pack/Weapons/weapons_Render04.png" sourcerect="1458,642,35,70" depth="0.55" origin="0.5,0.5" />
@@ -171,17 +171,17 @@
 </Override>
 
 <Item name="Revolver Round Special" identifier="revolverroundspecial" description="A stronger revolver round with higher caliber, used by the .357 revolver."
-		category="Equipment" maxstacksize="8" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
+		category="Equipment" maxstacksize="16" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" scale="0.5">
 	<Fabricate suitablefabricators="fabricator" requiredtime="12" amount="16">
 		<RequiredSkill identifier="weapons" level="40" />
-		<RequiredItem identifier="steel"/>
-		<RequiredItem identifier="lead"/>
+		<RequiredItem identifier="iron"/>
+		<RequiredItem identifier="aluminium"/>
 		<RequiredItem identifier="flashpowder"/>
 		<RequiredItem identifier="titaniumaluminiumalloy"/>
 	</Fabricate>
 	<Deconstruct time="2">
-		<RequiredItem identifier="steel" outcondition="0.0625"/>
-		<RequiredItem identifier="lead" outcondition="0.0625"/>
+		<RequiredItem identifier="iron" outcondition="0.0625"/>
+		<RequiredItem identifier="aluminium" outcondition="0.0625"/>
 		<RequiredItem identifier="flashpowder" outcondition="0.0625"/>
 		<RequiredItem identifier="titaniumaluminiumalloy" outcondition="0.0625"/>
 	</Deconstruct>
@@ -207,7 +207,8 @@
 	<Projectile characterusable="false" hitscan="true" hitscancount="2" spread="1" removeonhit="true">
 		<Attack structuredamage="0.1" targetforce="1" itemdamage="5" severlimbsprobability="0">
 			<Affliction identifier="bleeding" strength="5" />
-			<Affliction identifier="gunshotwound" strength="4" />
+			<Affliction identifier="gunshotwound" strength="8" />
+			<Affliction identifier="stun" strength="0.05" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -221,8 +222,9 @@
 	<Pickable slots="Any" msg="ItemMsgPickUpSelect" />
 	<Projectile characterusable="false" hitscan="true" hitscancount="2" spread="1" removeonhit="true">
 		<Attack structuredamage="0.1" targetforce="1" itemdamage="7" severlimbsprobability="0.1">
-			<Affliction identifier="bleeding" strength="20" />
-			<Affliction identifier="gunshotwound" strength="5" />
+			<Affliction identifier="bleeding" strength="10" />
+			<Affliction identifier="gunshotwound" strength="8" />
+			<Affliction identifier="stun" strength="0.04" />
 		</Attack>
 	</Projectile>
 	<Upgrade gameversion="0.10.0.0" scale="0.5" />
